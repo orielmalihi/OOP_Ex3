@@ -129,6 +129,15 @@ public class DGraph implements graph, Serializable{
 		MC++;
 		this.notifyAll();
 	}
+	
+	public synchronized void fixNodeScale(node_data n) {
+		// TODO Auto-generated method stub
+		vBank.put(n.getKey(), n);
+		MC++;
+		this.notifyAll();
+	}
+	
+	
 	/**
 	 * adds an edge to this graph. the edge source is src
 	 * and the edge destination is dest. if thr src or dest nodes are not

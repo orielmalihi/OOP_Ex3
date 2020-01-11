@@ -39,6 +39,7 @@ import oop_dataStructure.oop_edge_data;
 import oop_dataStructure.oop_graph;
 import oop_utils.OOP_Point3D;
 import utils.Point3D;
+import utils.Range;
 /**
  * this class represents a GUI for the Graph_algo class.
  * it enables the user to build a new radom graph or to build a new custum graph
@@ -48,10 +49,14 @@ import utils.Point3D;
  */
 
 public class MyGameGUI extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
+//	private DGraph dg;
 	private graph g;
 	private Graph_Algo algo;
+	private Range rx = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
+	private Range ry = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 	private ArrayList<String> fruits;
 	private ArrayList<String> robots;
+	private boolean afterAdapt = false;
 	private int kRADIUS = 5;
 	private ArrayList<node_data> targets = new ArrayList<node_data>();
 
@@ -65,8 +70,54 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		algo.init(this.g);
 	}
 
+	private void setRange() {
+		Collection<node_data> c = g.getV();
+		Iterator<node_data> itrV = c.iterator();
+		while(itrV.hasNext()) {
+			node_data n = itrV.next();
+			Point3D p = n.getLocation();
+			double x = p.x();
+			double y = p.y();
+			if(x<rx.get_min())
+				rx.set_min(x);
+			else if(x>rx.get_max())
+				rx.set_max(x);
+			if(y<ry.get_min())
+				ry.set_min(y);
+			else if(y>ry.get_max())
+				ry.set_max(y);
+		}
+	}
+
+	private void adaptRangeToGUI() {
+		setRange();
+		System.out.println("fixed rx: "+rx);
+		System.out.println("fixed ry: "+ry);
+		Collection<node_data> c = g.getV();
+		Iterator<node_data> itrV = c.iterator();
+		while(itrV.hasNext()) {
+			node_data n = itrV.next();
+			Point3D pBefore = n.getLocation();
+			double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
+			double x = 1000 * offsetx + 100; 
+			double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
+			double y = 400 * offsety;
+			y = (400 - y) + 100;
+			Point3D pAfter = new Point3D(x, y);
+			node_data fixedn = new Vertex(pAfter, n.getKey());
+//			System.out.println("Pbefore: "+pBefore+",Pafter: "+pAfter);
+//			System.out.println("fixedn: "+fixedn);
+			DGraph dirG = (DGraph)g;
+			dirG.fixNodeScale(fixedn);
+			g = dirG;
+		}
+		if(g.nodeSize()>0)
+			afterAdapt = true;
+
+	}
+
 	private void initGUI() {
-		this.setSize(800, 600);
+		this.setSize(1200, 600);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		MenuBar menuBar = new MenuBar();
@@ -98,11 +149,21 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		algo = new Graph_Algo(g);
 
 	}
+	
+	public void repaint() {
+		Graphics k;
+		k = getGraphics();
+		k.clearRect(0, 0, 1200, 600);
+		paint(k);
+	}
 
 
 	public void paint(Graphics k) {
-		// to implemnt scale
+		System.out.println("paint started!");
 		super.paint(k);
+		if(!afterAdapt) {
+			adaptRangeToGUI();
+		}
 		Font font = k.getFont().deriveFont((float) 16.5);
 		k.setFont(font);
 		Collection<node_data> c1 = g.getV();
@@ -130,7 +191,8 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				k.setColor(Color.RED);
 				k.drawString(String.format("%.2f", e.getWeight()), xdir, ydir);
 			}
-		}	
+		}
+//		this.notify();
 	}
 
 
@@ -235,14 +297,15 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		gameGUI.setVisible(true);	
 	}
 
-	public void myGame() {
-//		int scenario_num = 2;
-		int senario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
-		game_service game = Game_Server.getServer(senario); // you have [0,23] games
+	public synchronized void myGame() {
+		int scenario_num = 2;
+//		int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+		game_service game = Game_Server.getServer(scenario_num); // you have [0,23] games
 		String gr = game.getGraph();
 		DGraph dg = new DGraph();
 		dg.init(gr);
 		this.g = dg;
+		System.out.println("g before repaint: "+g);
 		repaint();
 		String info = game.toString();
 		JSONObject line;

@@ -161,7 +161,7 @@ public class Vertex implements node_data, Serializable {
 	 */
 	
 	public String toString() {
-		return ""+id;
+		return ""+id+"loc:"+location;
 	}
 
 }
