@@ -49,14 +49,15 @@ import utils.Range;
  */
 
 public class MyGameGUI extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
-//	private DGraph dg;
 	private graph g;
 	private Graph_Algo algo;
+	private game_service game = null;
 	private Range rx = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 	private Range ry = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
-	private ArrayList<String> fruits;
-	private ArrayList<String> robots;
+	private ArrayList<String> fruits = new ArrayList<String>();
+	private ArrayList<String> robots = new ArrayList<String>();
 	private boolean afterAdapt = false;
+	private long time_of_last_draw, current_time;
 	private int kRADIUS = 5;
 	private ArrayList<node_data> targets = new ArrayList<node_data>();
 
@@ -70,54 +71,8 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		algo.init(this.g);
 	}
 
-	private void setRange() {
-		Collection<node_data> c = g.getV();
-		Iterator<node_data> itrV = c.iterator();
-		while(itrV.hasNext()) {
-			node_data n = itrV.next();
-			Point3D p = n.getLocation();
-			double x = p.x();
-			double y = p.y();
-			if(x<rx.get_min())
-				rx.set_min(x);
-			else if(x>rx.get_max())
-				rx.set_max(x);
-			if(y<ry.get_min())
-				ry.set_min(y);
-			else if(y>ry.get_max())
-				ry.set_max(y);
-		}
-	}
-
-	private void adaptRangeToGUI() {
-		setRange();
-		System.out.println("fixed rx: "+rx);
-		System.out.println("fixed ry: "+ry);
-		Collection<node_data> c = g.getV();
-		Iterator<node_data> itrV = c.iterator();
-		while(itrV.hasNext()) {
-			node_data n = itrV.next();
-			Point3D pBefore = n.getLocation();
-			double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
-			double x = 1000 * offsetx + 100; 
-			double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
-			double y = 400 * offsety;
-			y = (400 - y) + 100;
-			Point3D pAfter = new Point3D(x, y);
-			node_data fixedn = new Vertex(pAfter, n.getKey());
-//			System.out.println("Pbefore: "+pBefore+",Pafter: "+pAfter);
-//			System.out.println("fixedn: "+fixedn);
-			DGraph dirG = (DGraph)g;
-			dirG.fixNodeScale(fixedn);
-			g = dirG;
-		}
-		if(g.nodeSize()>0)
-			afterAdapt = true;
-
-	}
-
 	private void initGUI() {
-		this.setSize(1200, 600);
+		this.setSize(1400, 600);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		MenuBar menuBar = new MenuBar();
@@ -149,17 +104,66 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		algo = new Graph_Algo(g);
 
 	}
-	
+
+	private void setRange() {
+		Collection<node_data> c = g.getV();
+		Iterator<node_data> itrV = c.iterator();
+		while(itrV.hasNext()) {
+			node_data n = itrV.next();
+			Point3D p = n.getLocation();
+			double x = p.x();
+			double y = p.y();
+			if(x<rx.get_min())
+				rx.set_min(x);
+			else if(x>rx.get_max())
+				rx.set_max(x);
+			if(y<ry.get_min())
+				ry.set_min(y);
+			else if(y>ry.get_max())
+				ry.set_max(y);
+		}
+	}
+
+	private void adaptRangeToGUI() {
+		setRange();
+		System.out.println("fixed rx: "+rx);
+		System.out.println("fixed ry: "+ry);
+		Collection<node_data> c = g.getV();
+		Iterator<node_data> itrV = c.iterator();
+		while(itrV.hasNext()) {
+			node_data n = itrV.next();
+			Point3D pBefore = n.getLocation();
+			double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
+			double x = 1200 * offsetx + 100; 
+			double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
+			double y = 400 * offsety;
+			y = (400 - y) + 100;
+			Point3D pAfter = new Point3D(x, y);
+			node_data fixedn = new Vertex(pAfter, n.getKey());
+			//			System.out.println("Pbefore: "+pBefore+",Pafter: "+pAfter);
+			//			System.out.println("fixedn: "+fixedn);
+			DGraph dirG = (DGraph)g;
+			dirG.fixNodeScale(fixedn);
+			g = dirG;
+		}
+		if(g.nodeSize()>0)
+			afterAdapt = true;
+
+	}
+
+
 	public void repaint() {
 		Graphics k;
 		k = getGraphics();
-		k.clearRect(0, 0, 1200, 600);
+		k.clearRect(0, 0, 1400, 600);
 		paint(k);
 	}
 
 
 	public void paint(Graphics k) {
-		System.out.println("paint started!");
+		//		System.out.println("paint started!");
+		if(game != null)
+			time_of_last_draw = game.timeToEnd();
 		super.paint(k);
 		if(!afterAdapt) {
 			adaptRangeToGUI();
@@ -192,7 +196,56 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				k.drawString(String.format("%.2f", e.getWeight()), xdir, ydir);
 			}
 		}
-//		this.notify();
+
+		for(int i = 0; i<robots.size(); i++) {
+			try {
+				String robot_json = robots.get(i);
+				JSONObject line = new JSONObject(robot_json);
+				JSONObject r = line.getJSONObject("Robot");
+				String pos = r.getString("pos");
+				Point3D pBefore = new Point3D(pos);
+				double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
+				double x = 1200 * offsetx + 100; 
+				double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
+				double y = 400 * offsety;
+				y = (400 - y) + 100;
+				Point3D pAfter = new Point3D(x, y);
+				k.setColor(Color.GREEN);
+				k.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
+
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		for(int i = 0; i<fruits.size(); i++) {
+			try {
+				String fruit_json = fruits.get(i);
+				JSONObject line = new JSONObject(fruit_json);
+				JSONObject f = line.getJSONObject("Fruit");
+				String pos = f.getString("pos");
+				int type = f.getInt("type");
+				Point3D pBefore = new Point3D(pos);
+				double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
+				double x = 1200 * offsetx + 100; 
+				double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
+				double y = 400 * offsety;
+				y = (400 - y) + 100;
+				Point3D pAfter = new Point3D(x, y);
+				if(type<0)
+					k.setColor(Color.PINK);
+				else 
+					k.setColor(Color.BLACK);
+				k.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
+
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+
 	}
 
 
@@ -222,9 +275,11 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			}
 		}
 		else if(str.equals("New Custom Game")) {
+			clear();
 			myGame();
 		}
 		else if(str.equals("New Auto Game")) {
+			clear();
 			myGame();
 		}
 
@@ -297,10 +352,10 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		gameGUI.setVisible(true);	
 	}
 
-	public synchronized void myGame() {
-		int scenario_num = 2;
-//		int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
-		game_service game = Game_Server.getServer(scenario_num); // you have [0,23] games
+	public void myGame() {
+//		int scenario_num = 2;
+		int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+		game = Game_Server.getServer(scenario_num); // you have [0,23] games
 		String gr = game.getGraph();
 		DGraph dg = new DGraph();
 		dg.init(gr);
@@ -318,13 +373,13 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			// the list of fruits should be considered in your solution
 			Iterator<String> f_iter = game.getFruits().iterator();
 			while(f_iter.hasNext()) {
-				JSONObject fruits_line = new JSONObject(f_iter.next());
-				//				System.out.println(f_iter.next());
-				JSONObject f = fruits_line.getJSONObject("Fruit");
-				double val = f.getDouble("value");
-				int type = f.getInt("type");
-				String pos = f.getString("pos");
-				OOP_Point3D p = new OOP_Point3D(pos);
+				//				JSONObject fruits_line = new JSONObject(f_iter.next());
+				System.out.println(f_iter.next());
+				//				JSONObject f = fruits_line.getJSONObject("Fruit");
+				//				double val = f.getDouble("value");
+				//				int type = f.getInt("type");
+				//				String pos = f.getString("pos");
+				//				Point3D p = new Point3D(pos);
 			}
 			int src_node = 0;  // arbitrary node, you should start at one of the fruits
 			for(int a = 0;a<rs;a++) {
@@ -349,10 +404,18 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	 */
 	private void moveRobots(game_service game, graph gg) {
 		List<String> log = game.move();
+		robots = (ArrayList<String>) log;
+		fruits = (ArrayList<String>) game.getFruits();
 		if(log!=null) {
-			long t = game.timeToEnd();
+			if(time_of_last_draw<0)
+				repaint();
+			current_time = game.timeToEnd();
+			if(time_of_last_draw-current_time>200) {
+				repaint();
+			}
 			for(int i=0;i<log.size();i++) {
 				String robot_json = log.get(i);
+
 				try {
 					JSONObject line = new JSONObject(robot_json);
 					JSONObject ttt = line.getJSONObject("Robot");
@@ -363,7 +426,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 					if(dest==-1) {	
 						dest = nextNode(gg, src);
 						game.chooseNextEdge(rid, dest);
-						System.out.println("Turn to node: "+dest+"  time to end:"+(t/1000));
+						System.out.println("Turn to node: "+dest+"  time to end:"+(current_time/1000));
 						System.out.println(ttt);
 					}
 				} 
@@ -388,5 +451,18 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		ans = itr.next().getDest();
 		return ans;
 	}
+
+	private void clear() {
+		game = null;
+		rx = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
+		ry = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
+		fruits.clear();
+		robots.clear();
+		afterAdapt = false;
+		time_of_last_draw = -1;
+		current_time = -1;
+		targets.clear();
+	}
+
 
 }
