@@ -52,6 +52,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	private graph g;
 	private Graph_Algo algo;
 	private game_service game = null;
+	private int width = 1400, height = 600;
 	private Range rx = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 	private Range ry = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 	private ArrayList<String> fruits = new ArrayList<String>();
@@ -72,7 +73,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	}
 
 	private void initGUI() {
-		this.setSize(1400, 600);
+		this.setSize(width, height);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		MenuBar menuBar = new MenuBar();
@@ -134,10 +135,10 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			node_data n = itrV.next();
 			Point3D pBefore = n.getLocation();
 			double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
-			double x = 1200 * offsetx + 100; 
+			double x = (width-200) * offsetx + 100; 
 			double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
-			double y = 400 * offsety;
-			y = (400 - y) + 100;
+			double y = (height-200) * offsety;
+			y = (height - 200 - y) + 100;
 			Point3D pAfter = new Point3D(x, y);
 			node_data fixedn = new Vertex(pAfter, n.getKey());
 			//			System.out.println("Pbefore: "+pBefore+",Pafter: "+pAfter);
@@ -155,7 +156,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	public void repaint() {
 		Graphics k;
 		k = getGraphics();
-		k.clearRect(0, 0, 1400, 600);
+		k.clearRect(0, 0, width, height);
 		paint(k);
 	}
 
@@ -168,32 +169,34 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		if(!afterAdapt) {
 			adaptRangeToGUI();
 		}
-		Font font = k.getFont().deriveFont((float) 16.5);
-		k.setFont(font);
+		Image bufferimage= createImage(width, height);
+	    Graphics dbg= bufferimage.getGraphics();
+		Font font = dbg.getFont().deriveFont((float) 16.5);
+		dbg.setFont(font);
 		Collection<node_data> c1 = g.getV();
 		Iterator<node_data> itrV = c1.iterator();
 		while(itrV.hasNext()) {
 			node_data n = itrV.next();
 			Point3D p = n.getLocation();
-			k.setColor(Color.BLUE);
-			k.fillOval((int)p.x() - kRADIUS, (int)p.y() - kRADIUS, 2 * kRADIUS, 2 * kRADIUS);
-			k.drawString(n.getKey()+"", (int)p.x() - kRADIUS, (int)p.y() - kRADIUS-2);
+			dbg.setColor(Color.BLUE);
+			dbg.fillOval((int)p.x() - kRADIUS, (int)p.y() - kRADIUS, 2 * kRADIUS, 2 * kRADIUS);
+			dbg.drawString(n.getKey()+"", (int)p.x() - kRADIUS, (int)p.y() - kRADIUS-2);
 			Collection<edge_data> c2 = g.getE(n.getKey());
 			Iterator<edge_data> itrE = c2.iterator();
-			k.setColor(Color.RED);
+			dbg.setColor(Color.RED);
 			while(itrE.hasNext()) {
 				edge_data e = itrE.next();
 				Point3D ps = g.getNode(e.getSrc()).getLocation();
 				Point3D pf = g.getNode(e.getDest()).getLocation();
-				k.drawLine(ps.ix(), ps.iy(), pf.ix(), pf.iy());
-				k.setColor(Color.YELLOW);
+				dbg.drawLine(ps.ix(), ps.iy(), pf.ix(), pf.iy());
+				dbg.setColor(Color.YELLOW);
 				int xdir = (int)(0.8*pf.x() + 0.2*ps.x());
 				int ydir = (int)(0.8*pf.y() + 0.2*ps.y());
-				k.fillOval(xdir - kRADIUS , ydir - kRADIUS , 2 * kRADIUS, 2 * kRADIUS);
+				dbg.fillOval(xdir - kRADIUS , ydir - kRADIUS , 2 * kRADIUS, 2 * kRADIUS);
 				xdir = (int)(0.7*pf.x() + 0.3*ps.x());
 				ydir = (int)(0.7*pf.y() + 0.3*ps.y()-4);
-				k.setColor(Color.RED);
-				k.drawString(String.format("%.2f", e.getWeight()), xdir, ydir);
+				dbg.setColor(Color.RED);
+				dbg.drawString(String.format("%.1f", e.getWeight()), xdir, ydir);
 			}
 		}
 
@@ -205,13 +208,13 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				String pos = r.getString("pos");
 				Point3D pBefore = new Point3D(pos);
 				double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
-				double x = 1200 * offsetx + 100; 
+				double x = (width - 200) * offsetx + 100; 
 				double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
-				double y = 400 * offsety;
-				y = (400 - y) + 100;
+				double y = (height - 200) * offsety;
+				y = (height - 200 - y) + 100;
 				Point3D pAfter = new Point3D(x, y);
-				k.setColor(Color.GREEN);
-				k.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
+				dbg.setColor(Color.GREEN);
+				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
 
 
 			} catch (Exception e) {
@@ -228,24 +231,24 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				int type = f.getInt("type");
 				Point3D pBefore = new Point3D(pos);
 				double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
-				double x = 1200 * offsetx + 100; 
+				double x = (width - 200) * offsetx + 100; 
 				double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
-				double y = 400 * offsety;
-				y = (400 - y) + 100;
+				double y = (height - 200) * offsety;
+				y = (height - 200 - y) + 100;
 				Point3D pAfter = new Point3D(x, y);
 				if(type<0)
-					k.setColor(Color.PINK);
+					dbg.setColor(Color.PINK);
 				else 
-					k.setColor(Color.BLACK);
-				k.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
+					dbg.setColor(Color.BLACK);
+				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
 
 
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-
-
+		k.drawImage(bufferimage,0,0,this);
+		dbg.dispose();
 	}
 
 
@@ -410,7 +413,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			if(time_of_last_draw<0)
 				repaint();
 			current_time = game.timeToEnd();
-			if(time_of_last_draw-current_time>200) {
+			if(time_of_last_draw-current_time>50) {
 				repaint();
 			}
 			for(int i=0;i<log.size();i++) {
