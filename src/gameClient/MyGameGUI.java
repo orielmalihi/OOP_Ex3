@@ -18,6 +18,7 @@ import java.io.File;
 import java.text.AttributedCharacterIterator;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 
@@ -55,15 +56,16 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	private graph g;
 	private Graph_Algo algo;
 	private game_service game = null;
-	private int width = 1400, height = 600;
+	private int width = 1400, height = 600, numOfRobots = 0, grade = 0;
 	private Range rx = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 	private Range ry = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 	private ArrayList<String> fruits = new ArrayList<String>();
 	private ArrayList<String> robots = new ArrayList<String>();
-	private boolean afterAdapt = false;
+	private boolean afterAdapt = false, customGameStart = false, customGameRunning = false;
 	private long time_of_last_draw, current_time;
 	private int kRADIUS = 5;
 	private ArrayList<node_data> targets = new ArrayList<node_data>();
+	private Hashtable<Integer, ArrayList<node_data>> missionControl = new Hashtable<Integer, ArrayList<node_data>>();
 
 	public MyGameGUI() {
 		initGUI();
@@ -173,7 +175,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			adaptRangeToGUI();
 		}
 		Image bufferimage= createImage(width, height);
-	    Graphics dbg= bufferimage.getGraphics();
+		Graphics dbg= bufferimage.getGraphics();
 		Font font = dbg.getFont().deriveFont((float) 16.5);
 		dbg.setFont(font);
 		Collection<node_data> c1 = g.getV();
@@ -216,8 +218,8 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				double y = (height - 200) * offsety;
 				y = (height - 200 - y) + 100;
 				Point3D pAfter = new Point3D(x, y);
-//				dbg.setColor(Color.GREEN);
-//				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
+				//				dbg.setColor(Color.GREEN);
+				//				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
 				final BufferedImage image = ImageIO.read(new File("data/robot.png"));
 				dbg.drawImage(image, pAfter.ix() - 3*kRADIUS, pAfter.iy() - 3*kRADIUS, null);
 
@@ -251,6 +253,46 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				e.printStackTrace();
 			}
 		}
+
+		if(customGameStart && targets.size()<numOfRobots) {
+			dbg.setColor(Color.BLACK);
+			if(numOfRobots==1) {
+				dbg.drawString("INSTRUCTIONS:", 50, 70);
+				dbg.drawString("Choose a location for your robot", 50, 90);
+			}else {
+				dbg.drawString("INSTRUCTIONS:", 50, 70);
+				dbg.drawString("Choose "+(numOfRobots-targets.size())+" locations for your robots", 50, 90);
+			}
+		}
+		if(customGameRunning && game.isRunning()) {
+			dbg.setColor(Color.BLACK);
+			dbg.drawString("INSTRUCTIONS:", 50, 70);
+			dbg.drawString("click on any robot and then choose a node for him to go to!", 50, 90);
+			
+		}
+		
+		
+
+		if(game!= null && game.isRunning()) {
+			dbg.setColor(Color.BLACK);
+			dbg.drawString("Time To End Game: "+(game.timeToEnd()/1000), 700, 100);
+			String info = game.toString();
+			JSONObject line;
+			try {
+				line = new JSONObject(info);
+				JSONObject ttt = line.getJSONObject("GameServer");
+				grade = ttt.getInt("grade");
+			} catch (Exception e1) {e1.printStackTrace();}
+			dbg.drawString("Current Score: "+ grade, 1150, 100);
+		}
+		if(customGameRunning && !game.isRunning()) {
+			dbg.setColor(Color.RED);
+			font = dbg.getFont().deriveFont((float) 30);
+			dbg.setFont(font);
+			dbg.drawString("GAME OVER!", width/2 - 100, height/2);
+			font = dbg.getFont().deriveFont((float) 16.5);
+			dbg.setFont(font);
+		}
 		k.drawImage(bufferimage,0,0,this);
 		dbg.dispose();
 	}
@@ -283,7 +325,22 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		else if(str.equals("New Custom Game")) {
 			clear();
-			myGame();
+			customGameStart = true;
+			int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			game = Game_Server.getServer(scenario_num); // you have [0,23] games
+			String gr = game.getGraph();
+			DGraph dg = new DGraph();
+			dg.init(gr);
+			this.g = dg;
+			fruits = (ArrayList<String>) game.getFruits();
+			String info = game.toString();
+			JSONObject line;
+			try {
+				line = new JSONObject(info);
+				JSONObject ttt = line.getJSONObject("GameServer");
+				numOfRobots = ttt.getInt("robots");
+			} catch (Exception e1) {e1.printStackTrace();}
+			repaint();
 		}
 		else if(str.equals("New Auto Game")) {
 			clear();
@@ -317,7 +374,10 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				toChoose = n;
 			}
 		}
-
+		if(toChoose!=null)
+			targets.add(toChoose);
+		if(customGameStart && targets.size()==numOfRobots)
+			userGame();
 		repaint();
 
 		System.out.println("mousePressed");
@@ -359,8 +419,35 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		gameGUI.setVisible(true);	
 	}
 
+	public void userGame() {
+		for(int i = 0;i<numOfRobots;i++) {
+			game.addRobot(targets.get(i).getKey());
+		}
+		customGameStart = false;
+		customGameRunning = true;
+		targets.clear();
+
+		game.startGame();
+
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				while(game.isRunning()) {
+					myMoveRobots();
+				}			
+			}
+		};
+		Thread move = new Thread(r);
+		move.start();
+		String results = game.toString();
+		System.out.println("Game Over: "+results);
+
+
+	}
+
 	public void myGame() {
-//		int scenario_num = 2;
+		//		int scenario_num = 2;
 		int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
 		game = Game_Server.getServer(scenario_num); // you have [0,23] games
 		String gr = game.getGraph();
@@ -395,10 +482,18 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		catch (JSONException e) {e.printStackTrace();}
 		game.startGame();
-		// should be a Thread!!!
-		while(game.isRunning()) {
-			moveRobots(game, g);
-		}
+
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				while(game.isRunning()) {
+					moveRobots(game, g);
+				}			
+			}
+		};
+		Thread move = new Thread(r);
+		move.start();
 		String results = game.toString();
 		System.out.println("Game Over: "+results);
 	}
@@ -468,7 +563,61 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		afterAdapt = false;
 		time_of_last_draw = -1;
 		current_time = -1;
+		customGameStart = false;
+		customGameRunning = false;
 		targets.clear();
+	}
+
+	public void myMoveRobots() {
+		algo.init(g);
+		List<String> log = game.move();
+		robots = (ArrayList<String>) log;
+		fruits = (ArrayList<String>) game.getFruits();
+		if(log!=null) {
+			if(time_of_last_draw<0)
+				repaint();
+			current_time = game.timeToEnd();
+			if(time_of_last_draw-current_time>100) {
+				repaint();
+			}
+			for(int i=0;i<log.size();i++) {
+				String robot_json = log.get(i);
+
+				try {
+					JSONObject line = new JSONObject(robot_json);
+					JSONObject ttt = line.getJSONObject("Robot");
+					int rid = ttt.getInt("id");
+					int src = ttt.getInt("src");
+					int dest = ttt.getInt("dest");
+
+					if(dest == -1) {
+						ArrayList<node_data> robot_mission = missionControl.get(rid);
+						if(robot_mission!=null) {
+							while(!robot_mission.isEmpty()) {
+								node_data n = robot_mission.remove(0);
+								if(n.getKey()==src && robot_mission.size()>0) {
+									dest = robot_mission.get(0).getKey();
+									break;
+								}
+							}
+						}
+						if(dest==-1 && targets.size()==2 && targets.get(0).getKey() == src) {
+							missionControl.put(rid, (ArrayList<node_data>) algo.shortestPath(src, targets.get(1).getKey()));
+							targets.clear();
+						}
+						//						dest = nextNode(gg, src);
+						if(dest!=-1) {
+							game.chooseNextEdge(rid, dest);
+							System.out.println("Turn to node: "+dest+"  time to end:"+(current_time/1000));
+							System.out.println(ttt);
+						}
+					}
+				} 
+				catch (JSONException e) {e.printStackTrace();}
+			}
+			if(targets.size()==2)
+				targets.clear();
+		}
 	}
 
 
