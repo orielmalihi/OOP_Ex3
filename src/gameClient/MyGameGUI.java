@@ -12,13 +12,16 @@ import java.awt.MenuItem;
 import java.awt.Rectangle;
 import java.awt.Shape;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
+import java.io.File;
 import java.text.AttributedCharacterIterator;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -213,9 +216,10 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				double y = (height - 200) * offsety;
 				y = (height - 200 - y) + 100;
 				Point3D pAfter = new Point3D(x, y);
-				dbg.setColor(Color.GREEN);
-				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
-
+//				dbg.setColor(Color.GREEN);
+//				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
+				final BufferedImage image = ImageIO.read(new File("data/robot.png"));
+				dbg.drawImage(image, pAfter.ix() - 3*kRADIUS, pAfter.iy() - 3*kRADIUS, null);
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -236,12 +240,12 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				double y = (height - 200) * offsety;
 				y = (height - 200 - y) + 100;
 				Point3D pAfter = new Point3D(x, y);
+				final BufferedImage image;
 				if(type<0)
-					dbg.setColor(Color.PINK);
+					image = ImageIO.read(new File("data/banana.png"));
 				else 
-					dbg.setColor(Color.BLACK);
-				dbg.fillOval((int)pAfter.x() - kRADIUS, (int)pAfter.y() - kRADIUS, 3 * kRADIUS, 3 * kRADIUS);
-
+					image = ImageIO.read(new File("data/apple.png"));
+				dbg.drawImage(image, pAfter.ix() - 3*kRADIUS, pAfter.iy() - 3*kRADIUS, null);
 
 			} catch (Exception e) {
 				e.printStackTrace();
