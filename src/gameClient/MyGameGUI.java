@@ -64,6 +64,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	private ArrayList<String> fruits = new ArrayList<String>();
 	private ArrayList<String> robots = new ArrayList<String>();
 	private boolean afterAdapt = false, customGameStart = false, customGameRunning = false, fruitClicked = false;
+	private boolean autoGameFinish = false;
 	private long time_of_last_draw, current_time;
 	private int kRADIUS = 5;
 	private ArrayList<node_data> targets = new ArrayList<node_data>();
@@ -132,7 +133,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 	}
 
-	private Point3D setScale(Point3D pBefore) {
+	public Point3D setScale(Point3D pBefore) {
 		double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
 		double x = (width - 200) * offsetx + 100; 
 		double offsety = (pBefore.y() - ry.get_min())/(ry.get_max() - ry.get_min());
@@ -253,7 +254,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				dbg.drawString("Choose a node location for your robot", 50, 90);
 			}else {
 				dbg.drawString("INSTRUCTIONS:", 50, 70);
-				dbg.drawString("Choose "+(numOfRobots-targets.size())+"node locations for your robots", 50, 90);
+				dbg.drawString("Choose "+(numOfRobots-targets.size())+" node locations for your robots", 50, 90);
 			}
 		}
 		if(customGameRunning && game.isRunning()) {
@@ -277,7 +278,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			} catch (Exception e1) {e1.printStackTrace();}
 			dbg.drawString("Current Score: "+ grade, 1150, 80);
 		}
-		if(customGameRunning && !game.isRunning()) {
+		if(customGameRunning && !game.isRunning() || autoGameFinish) {
 			dbg.setColor(Color.RED);
 			font = dbg.getFont().deriveFont((float) 30);
 			dbg.setFont(font);
@@ -336,7 +337,15 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		else if(str.equals("New Auto Game")) {
 			clear();
-			//			myGame();
+			int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			game = Game_Server.getServer(scenario_num); // you have [0,23] games
+			String gr = game.getGraph();
+			DGraph dg = new DGraph();
+			dg.init(gr);
+			this.g = dg;
+			algo.init(g);
+			AutoGame_Thread auto = new AutoGame_Thread(game, fruits, robots, this);
+			auto.start();
 		}
 
 	}
@@ -565,7 +574,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				int t = fruit.getInt("type");
 				Point3D p2 = setScale(new Point3D(fruit.getString("pos")));
 				double dest = p.distance2D(p2);
-				if(dest<30) {
+				if(dest<20) {
 					System.out.println("fruit clicked!");
 					fruit_type = t;
 					return p2;
@@ -584,6 +593,17 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		if(fruit_type==-1) {
 			ans = (ArrayList<node_data>) algo.shortestPath(src, Math.max(e.getSrc(), e.getDest()));
 			ans.add(g.getNode(Math.min(e.getSrc(), e.getDest())));
+		}
+		return ans;
+	}
+	
+	public double getMissionDist(int src, edge_data e){
+		double ans = 0;
+		if(fruit_type==1) {
+			ans = algo.shortestPathDist(src, Math.min(e.getSrc(), e.getDest())) + e.getWeight() ;
+		}
+		if(fruit_type==-1) {
+			ans = algo.shortestPathDist(src, Math.max(e.getSrc(), e.getDest())) + e.getWeight();
 		}
 		return ans;
 	}
