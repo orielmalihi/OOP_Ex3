@@ -64,7 +64,6 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	private ArrayList<String> fruits = new ArrayList<String>();
 	private ArrayList<String> robots = new ArrayList<String>();
 	private boolean afterAdapt = false, customGameStart = false, customGameRunning = false, fruitClicked = false;
-	private boolean autoGameFinish = false;
 	private long time_of_last_draw, current_time;
 	private int kRADIUS = 5;
 	private ArrayList<node_data> targets = new ArrayList<node_data>();
@@ -268,7 +267,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 
 		if(game!= null && game.isRunning()) {
 			dbg.setColor(Color.BLACK);
-			dbg.drawString("Time Untill The End Game: "+(game.timeToEnd()/1000), 700, 80);
+			dbg.drawString("Time Untill The End Of The Game: "+(game.timeToEnd()/1000), 700, 80);
 			String info = game.toString();
 			JSONObject line;
 			try {
@@ -278,11 +277,19 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			} catch (Exception e1) {e1.printStackTrace();}
 			dbg.drawString("Current Score: "+ grade, 1150, 80);
 		}
-		if(customGameRunning && !game.isRunning() || autoGameFinish) {
+		if(customGameRunning && !game.isRunning() || !robots.isEmpty() && game!=null && !game.isRunning()) {
 			dbg.setColor(Color.RED);
 			font = dbg.getFont().deriveFont((float) 30);
 			dbg.setFont(font);
 			dbg.drawString("GAME OVER!", width/2 - 100, height/2);
+			String info = game.toString();
+			JSONObject line;
+			try {
+				line = new JSONObject(info);
+				JSONObject ttt = line.getJSONObject("GameServer");
+				grade = ttt.getInt("grade");
+			} catch (Exception e1) {e1.printStackTrace();}
+			dbg.drawString("Final Score: "+ grade, width/2 - 100, height-500);
 			font = dbg.getFont().deriveFont((float) 16.5);
 			dbg.setFont(font);
 		}
