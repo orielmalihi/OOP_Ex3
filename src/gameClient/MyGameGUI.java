@@ -267,7 +267,14 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			dbg.setColor(Color.BLACK);
 			dbg.drawString("INSTRUCTIONS:", 50, 70);
 			dbg.drawString("click on any robot and then choose a fruit for him to eat!", 50, 90);
+			dbg.drawString("click on the screen when the game is over", 50, 110);
 
+		}
+		
+		if(!customGameRunning && !robots.isEmpty() && game!=null && game.isRunning()) {
+			dbg.setColor(Color.BLACK);
+			dbg.drawString("INSTRUCTIONS:", 50, 70);
+			dbg.drawString("click on the screen when the game is over", 50, 90);
 		}
 
 
