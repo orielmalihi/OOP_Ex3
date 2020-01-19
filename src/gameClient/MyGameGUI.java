@@ -53,6 +53,8 @@ import utils.Range;
  */
 
 public class MyGameGUI extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
+	private KML_Logger kml_logger;
+	private int scenario;
 	private final double EPSILON = 0.001;
 	private graph g;
 	private Graph_Algo algo;
@@ -278,6 +280,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			dbg.drawString("Current Score: "+ grade, 1150, 80);
 		}
 		if(customGameRunning && !game.isRunning() || !robots.isEmpty() && game!=null && !game.isRunning()) {
+			kml_logger.create_kml("data/kml files/"+scenario+".kml");
 			dbg.setColor(Color.RED);
 			font = dbg.getFont().deriveFont((float) 30);
 			dbg.setFont(font);
@@ -326,12 +329,14 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		else if(str.equals("New Custom Game")) {
 			clear();
 			customGameStart = true;
-			int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
-			game = Game_Server.getServer(scenario_num); // you have [0,23] games
+			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			kml_logger = new KML_Logger("scenario: "+scenario);
+			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
 			DGraph dg = new DGraph();
 			dg.init(gr);
 			this.g = dg;
+			kml_logger.addGraph(g);
 			fruits = (ArrayList<String>) game.getFruits();
 			String info = game.toString();
 			JSONObject line;
@@ -344,8 +349,8 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		else if(str.equals("New Auto Game")) {
 			clear();
-			int scenario_num = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
-			game = Game_Server.getServer(scenario_num); // you have [0,23] games
+			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
 			DGraph dg = new DGraph();
 			dg.init(gr);
