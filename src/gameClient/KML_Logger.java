@@ -2,6 +2,7 @@ package gameClient;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -46,6 +47,29 @@ public class KML_Logger {
 				line.createAndSetLineString().addToCoordinates(src.x(), src.y()).addToCoordinates(dest.x(), dest.y());
 			}
 		}
+	}
+	
+	public void addRobot(Point3D p) {
+		LocalDateTime time = LocalDateTime.now();
+		Placemark robot = doc.createAndAddPlacemark();
+		Icon icon = new Icon().withHref("http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png");
+		robot.createAndAddStyle().createAndSetIconStyle().withScale(1.0).withIcon(icon);
+		robot.createAndSetPoint().addToCoordinates(p.x(), p.y());
+		robot.createAndSetTimeStamp().withWhen(time.toString());
+		
+	}
+	
+	public void addFruit(int type, Point3D p) {
+		LocalDateTime time = LocalDateTime.now();
+		Placemark fruit = doc.createAndAddPlacemark();
+		Icon icon = new Icon();
+		if(type == -1)
+			icon.withHref("http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png");
+		else
+			icon.withHref("http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png");
+		fruit.createAndAddStyle().createAndSetIconStyle().withScale(1.0).withIcon(icon);
+		fruit.createAndSetPoint().addToCoordinates(p.x(), p.y());
+		fruit.createAndSetTimeStamp().withWhen(time.toString());	
 	}
 	
 	public void create_kml(String name) {

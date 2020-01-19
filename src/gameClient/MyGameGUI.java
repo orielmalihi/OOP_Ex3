@@ -219,6 +219,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				String pos = r.getString("pos");
 				Point3D pBefore = new Point3D(pos);
 				Point3D pAfter = setScale(pBefore);
+				kml_logger.addRobot(pBefore);
 				final BufferedImage image = ImageIO.read(new File("data/robot.png"));
 				dbg.drawImage(image, pAfter.ix() - 3*kRADIUS, pAfter.iy() - 3*kRADIUS, null);
 
@@ -237,10 +238,14 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				Point3D pBefore = new Point3D(pos);
 				Point3D pAfter = setScale(pBefore);
 				final BufferedImage image;
-				if(type<0)
+				if(type<0) {
 					image = ImageIO.read(new File("data/banana.png"));
-				else 
+					kml_logger.addFruit(-1, pBefore);
+				}
+				else {
 					image = ImageIO.read(new File("data/apple.png"));
+					kml_logger.addFruit(1, pBefore);
+				}
 				dbg.drawImage(image, pAfter.ix() - 3*kRADIUS, pAfter.iy() - 3*kRADIUS, null);
 
 			} catch (Exception e) {
@@ -330,7 +335,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			clear();
 			customGameStart = true;
 			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
-			kml_logger = new KML_Logger("scenario: "+scenario);
+			kml_logger = new KML_Logger("user-scenario: "+scenario);
 			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
 			DGraph dg = new DGraph();
@@ -350,11 +355,13 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		else if(str.equals("New Auto Game")) {
 			clear();
 			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			kml_logger = new KML_Logger("Auto-scenario: "+scenario);
 			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
 			DGraph dg = new DGraph();
 			dg.init(gr);
 			this.g = dg;
+			kml_logger.addGraph(g); 
 			algo.init(g);
 			AutoGame_Thread auto = new AutoGame_Thread(game, fruits, robots, this);
 			auto.start();
