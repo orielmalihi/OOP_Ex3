@@ -18,6 +18,11 @@ import dataStructure.graph;
 import dataStructure.node_data;
 import utils.Point3D;
 
+/**
+ * this class represents a thread that controls the auto-game.
+ * @author oriel
+ *
+ */
 public class AutoGame_Thread extends Thread {
 	private MyGameGUI gui;
 	private int numOfRobots = 0;
@@ -27,13 +32,26 @@ public class AutoGame_Thread extends Thread {
 	private ArrayList<String> robots;
 	private Point3D [] targets;
 	private Hashtable<Integer, ArrayList<node_data>> missionControl = new Hashtable<Integer, ArrayList<node_data>>();
-
+	
+	/**
+	 * this is constructor for the thread.
+	 * it must get this parameters so it will be possible to show this
+	 * game on the GUI class.
+	 * @param game
+	 * @param fruits
+	 * @param robots
+	 * @param gui
+	 */
 	public AutoGame_Thread(game_service game, ArrayList<String> fruits, ArrayList<String> robots, MyGameGUI gui) {
 		this.game = game;
 		this.fruits = fruits;
 		this.robots = robots;
 		this.gui = gui;
 	}
+	
+	/**
+	 * this funtion runs the game.
+	 */
 
 	public void run(){
 		String info = game.toString();
@@ -62,6 +80,12 @@ public class AutoGame_Thread extends Thread {
 		System.out.println("Game Over: "+results);
 
 	}
+	
+	/**
+	 * this function check if a destonation of a robot is -1, if it is
+	 * it means it does not move and it will give it a mission to the closest fruit to him.
+	 * if the robot has not finished its mission yet it will not get a new mission.
+	 */
 
 	private void moveRobots() {
 		List<String> log = game.move();
@@ -134,6 +158,15 @@ public class AutoGame_Thread extends Thread {
 			}
 		}
 	}
+	
+	/**
+	 * sets the target list to have all the values of the src list.
+	 * this is necessary and can not be done by only changing the pointer
+	 * because if i would change the pointer the "connection" to this list in the GUI class 
+	 * would be lost.
+	 * @param target
+	 * @param src
+	 */
 
 	private void initList(List<String> target, List<String> src) {
 		target.clear();
@@ -143,6 +176,13 @@ public class AutoGame_Thread extends Thread {
 			target.add(s);
 		}
 	}
+	
+	/**
+	 * this function chooses a location for the robots.
+	 * the location will be as close as it can be to a fruit.
+	 * if the number of robots is greater than the number of the fruits it 
+	 * will choose for the extra robots a random location.
+	 */
 
 	private void chooseLocationsForRobots() {
 		int count = 0;
@@ -166,6 +206,13 @@ public class AutoGame_Thread extends Thread {
 				game.addRobot(count++);
 		} catch (Exception e) {e.printStackTrace();}
 	}
+	
+	/**
+	 * this function check is a fruit is currently targeted by another robot.
+	 * returns true if it is, and false if it is not.
+	 * @param p
+	 * @return
+	 */
 	
 	private boolean isTargeted(Point3D p) {
 		for(int i =0; i<targets.length; i++) {

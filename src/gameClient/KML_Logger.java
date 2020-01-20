@@ -14,18 +14,33 @@ import de.micromata.opengis.kml.v_2_2_0.Icon;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
 import de.micromata.opengis.kml.v_2_2_0.Placemark;
 import utils.Point3D;
-
+/**
+ * this class represents a way to export the data of a game to a KML file.
+ * this enable the user to see the result of the game in apps like google-eart and more.
+ * more about kml: https://developers.google.com/kml/documentation/kml_tut
+ * @author oriel
+ *
+ */
 public class KML_Logger {
 	
 	private Kml kml;
 	private Document doc;
 	
-	
+	/**
+	 * crates the kml logger.
+	 * @param app_name
+	 */
 	public KML_Logger(String app_name) {
 		kml = new Kml();
 		doc = kml.createAndSetDocument().withName(app_name).withOpen(true);
 		System.out.println("doc :"+doc);
 	}
+	
+	/**
+	 * adds a graph to the kml.
+	 * the nodes will be shown as blue-pushpin.
+	 * @param g
+	 */
 	
 	public void addGraph(graph g) {
 		Collection<node_data> c = g.getV();
@@ -49,6 +64,14 @@ public class KML_Logger {
 		}
 	}
 	
+	/**
+	 * adds a robot to the kml.
+	 * the robot will be shown as white-pushpin.
+	 * the robot will also have a time-stamp which will enable the
+	 * user to see where the robot was in each moment of the game.
+	 * @param g
+	 */
+	
 	public void addRobot(Point3D p) {
 		LocalDateTime time = LocalDateTime.now();
 		Placemark robot = doc.createAndAddPlacemark();
@@ -58,6 +81,15 @@ public class KML_Logger {
 		robot.createAndSetTimeStamp().withWhen(time.toString());
 		
 	}
+	
+	/**
+	 * adds a fruit to the kml.
+	 * the fruit will be shown as yellow-pushpin if it is a banana or
+	 * a red-pushpin if it is an apple.
+	 * the fruit will also have a time-stamp which will enable the
+	 * user to see where the fruit was in each moment of the game.
+	 * @param g
+	 */
 	
 	public void addFruit(int type, Point3D p) {
 		LocalDateTime time = LocalDateTime.now();
@@ -71,6 +103,11 @@ public class KML_Logger {
 		fruit.createAndSetPoint().addToCoordinates(p.x(), p.y());
 		fruit.createAndSetTimeStamp().withWhen(time.toString());	
 	}
+	
+	/**
+	 * crates the kml file with the param name.
+	 * @param name
+	 */
 	
 	public void create_kml(String name) {
 		try {

@@ -45,9 +45,13 @@ import oop_utils.OOP_Point3D;
 import utils.Point3D;
 import utils.Range;
 /**
- * this class represents a GUI for the Graph_algo class.
- * it enables the user to build a new radom graph or to build a new custum graph
- * and to run on the graph the algorithms from the Graph_algo class.
+ * this class represents a GUI for Ex3 aka "The Maze Of Waze" game.
+ * in this game the user chooses from the game server a scenario which includes:
+ * a graph, number of robots, and number of fruits.
+ * the mission is for the robots to eat as many fruits as they can in 30 or 60 secondes game.
+ * the user can choose wether to play a custom game or an auto-game.
+ * in the custom game the user  controls the movement of the robots, and in the auto-game the robots 
+ * move automatic (based on an algorithm i developed).
  * @author oriel
  *
  */
@@ -70,17 +74,18 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	private int kRADIUS = 5;
 	private ArrayList<node_data> targets = new ArrayList<node_data>();
 	private Hashtable<Integer, ArrayList<node_data>> missionControl = new Hashtable<Integer, ArrayList<node_data>>();
-
+	
+	/**
+	 * constructor for the GUI class
+	 */
 	public MyGameGUI() {
 		initGUI();
 	}
 
-	public MyGameGUI(graph g) {
-		initGUI();
-		this.g = g;
-		algo.init(this.g);
-	}
 
+	/**
+	 * inits the GUI class with constent parameters
+	 */
 	private void initGUI() {
 		this.setSize(width, height);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -90,22 +95,18 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		menuBar.add(menu);
 		this.setMenuBar(menuBar);
 
-		MenuItem item1 = new MenuItem("Save Graph");
+		MenuItem item1 = new MenuItem("Save As KML File");
 		item1.addActionListener(this);
 
-		MenuItem item2 = new MenuItem("Load Graph");
+		MenuItem item2 = new MenuItem("New Custom Game");
 		item2.addActionListener(this);
 
-		MenuItem item3 = new MenuItem("New Custom Game");
+		MenuItem item3 = new MenuItem("New Auto Game");
 		item3.addActionListener(this);
-
-		MenuItem item4 = new MenuItem("New Auto Game");
-		item4.addActionListener(this);
 
 		menu.add(item1);
 		menu.add(item2);
 		menu.add(item3);
-		menu.add(item4);
 
 
 		this.addMouseListener(this);
@@ -114,6 +115,11 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		algo = new Graph_Algo(g);
 
 	}
+	
+	/**
+	 * sets the rx and ry Range objects to the lowest and highest x and y values
+	 * of the graph given by the game server, for further calculation.
+	 */
 
 	private void setRange() {
 		Collection<node_data> c = g.getV();
@@ -133,6 +139,13 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				ry.set_max(y);
 		}
 	}
+	
+	/**
+	 * gets Point3D that cant be shown on the GUI and creates and returns fixed Point3D
+	 * with x,y that can be shown on the GUI.
+	 * @param pBefore
+	 * @return
+	 */
 
 	public Point3D setScale(Point3D pBefore) {
 		double offsetx = (pBefore.x() - rx.get_min())/(rx.get_max() - rx.get_min());
@@ -143,6 +156,11 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		Point3D pAfter = new Point3D(x, y);
 		return pAfter;
 	}
+	
+	/**
+	 * this function does setScale on every node of the given graph
+	 * so it can be shown on the gui.
+	 */
 
 	private void adaptRangeToGUI() {
 		setRange();
@@ -163,6 +181,10 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			afterAdapt = true;
 
 	}
+	
+	/**
+	 * clears the gui window and calls the paint method
+	 */
 
 
 	public void repaint() {
@@ -171,6 +193,11 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		k.clearRect(0, 0, width, height);
 		paint(k);
 	}
+	
+	/**
+	 * paints the graph, the robots, the fruits and the instructions of the game.
+	 * this is the most importent method in this class.
+	 */
 
 
 	public void paint(Graphics k) {
@@ -277,8 +304,6 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			dbg.drawString("click on the screen when the game is over", 50, 90);
 		}
 
-
-
 		if(game!= null && game.isRunning()) {
 			dbg.setColor(Color.BLACK);
 			dbg.drawString("Time Untill The End Of The Game: "+(game.timeToEnd()/1000), 700, 80);
@@ -292,7 +317,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			dbg.drawString("Current Score: "+ grade, 1150, 80);
 		}
 		if(customGameRunning && !game.isRunning() || !robots.isEmpty() && game!=null && !game.isRunning()) {
-			kml_logger.create_kml("data/kml files/"+scenario+".kml");
+//			kml_logger.create_kml("data/kml files/"+scenario+".kml");
 			dbg.setColor(Color.RED);
 			font = dbg.getFont().deriveFont((float) 30);
 			dbg.setFont(font);
@@ -317,25 +342,16 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	public void actionPerformed(ActionEvent e) {
 		String str = e.getActionCommand();
 
-		if (str.equals("Save Graph")) {
-			FileDialog chooser = new FileDialog(this, "Save your Graph", FileDialog.SAVE);
+		if (str.equals("Save As KML File")) {
+			FileDialog chooser = new FileDialog(this, "Save Your Game", FileDialog.SAVE);
 			chooser.setVisible(true);
 			String filename = chooser.getFile();
 			String path = chooser.getDirectory();
 			System.out.println(filename);
 			if(filename!=null) {
-				algo.init(g);
-				algo.save(path + filename +".txt");
-			}
-		} else if (str.equals("Load Graph")) {
-			FileDialog chooser = new FileDialog(this, "Load your Graph", FileDialog.LOAD);
-			chooser.setVisible(true);
-			String filename = chooser.getFile();
-			String path = chooser.getDirectory();
-			if(filename!=null) {
-				algo.init(path + filename);
-				g = algo.copy();
-				repaint();
+				System.out.println(path);
+				System.out.println(filename);
+				kml_logger.create_kml(path + filename + ".kml");
 			}
 		}
 		else if(str.equals("New Custom Game")) {
@@ -380,6 +396,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("mouseClicked");
 	}
+	
 
 	@Override
 	public void mousePressed(MouseEvent e) {
@@ -453,6 +470,12 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		MyGameGUI gameGUI = new MyGameGUI();
 		gameGUI.setVisible(true);	
 	}
+	
+	/**
+	 * this method starts the custom game.
+	 * it uses the moveRobots method in a thread so the user can play the game
+	 * and change games while it is still running.
+	 */
 
 	public void userGame() {
 		for(int i = 0;i<numOfRobots;i++) {
@@ -481,6 +504,10 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 
 
 	}
+	
+	/**
+	 * sets all the objets and parameters of this class for a new game.
+	 */
 
 
 	private void clear() {
@@ -498,6 +525,12 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		fruit_type = 0;
 		targets.clear();
 	}
+	
+	/**
+	 * this function move the robots in the game.
+	 * if the dest param of a robot is -1 it means that it is not moving and
+	 * it will wait until it gets a new mission (fruit to eat) by the user.
+	 */
 
 	public void myMoveRobots() {
 		algo.init(g);
@@ -532,10 +565,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 								}
 							}
 						}
-//						if(dest==-1 && targets.size()==2 && targets.get(0).getKey() == src) {
-//							missionControl.put(rid, (ArrayList<node_data>) algo.shortestPath(src, targets.get(1).getKey()));
-//							targets.clear();
-//						}
+
 						if(dest==-1 && targets.size()==1 && targets.get(0).getKey() == src && fruitClicked) {
 							fruitClicked = false;
 							missionControl.put(rid, (ArrayList<node_data>) getMissionList(src, edge_of_fruit));
@@ -557,6 +587,13 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				targets.clear();
 		}
 	}
+	
+	/**
+	 * gets a location of a fruit in the graph and returns the edge of this fruit.
+	 * if the location is not a location of a fruit it will return null.
+	 * @param pos
+	 * @return
+	 */
 
 	public edge_data getEdgeOfFruit(Point3D pos) {
 		Point3D p = isFruit(pos);
@@ -588,6 +625,12 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		return null;
 	}
+	
+	/**
+	 * gets a location and checks if this location is a location of a fruit.
+	 * @param p
+	 * @return
+	 */
 
 	public Point3D isFruit(Point3D p) {
 		Collection<String> fruits = game.getFruits();
@@ -609,6 +652,14 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		return null;
 	}
 	
+	/**
+	 * gets src of a robot end the an edge of a fruit and creates a List of nodes which
+	 * will be the mission of this robot.
+	 * @param src
+	 * @param e
+	 * @return
+	 */
+	
 	public List<node_data> getMissionList(int src, edge_data e){
 		ArrayList<node_data> ans = null;
 		if(fruit_type==1) {
@@ -621,6 +672,14 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		return ans;
 	}
+	
+	/**
+	 * gets src of a robot and edge of a fruit and returns the shortest destination from
+	 * the robot to the fruit.
+	 * @param src
+	 * @param e
+	 * @return
+	 */
 	
 	public double getMissionDist(int src, edge_data e){
 		double ans = 0;
