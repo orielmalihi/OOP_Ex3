@@ -357,7 +357,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		else if(str.equals("New Custom Game")) {
 			clear();
 			customGameStart = true;
-			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter scenario number between 0-23"));
 			kml_logger = new KML_Logger("user-scenario: "+scenario);
 			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
@@ -377,7 +377,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		else if(str.equals("New Auto Game")) {
 			clear();
-			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter senario number between 0-23"));
+			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter scenario number between 0-23"));
 			kml_logger = new KML_Logger("Auto-scenario: "+scenario);
 			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
