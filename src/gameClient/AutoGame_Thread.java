@@ -25,6 +25,7 @@ public class AutoGame_Thread extends Thread {
 	private game_service game;
 	private ArrayList<String> fruits;
 	private ArrayList<String> robots;
+	private Point3D [] targets;
 	private Hashtable<Integer, ArrayList<node_data>> missionControl = new Hashtable<Integer, ArrayList<node_data>>();
 
 	public AutoGame_Thread(game_service game, ArrayList<String> fruits, ArrayList<String> robots, MyGameGUI gui) {
@@ -43,6 +44,8 @@ public class AutoGame_Thread extends Thread {
 			numOfRobots = ttt.getInt("robots");
 		} catch (Exception e1) {e1.printStackTrace();}
 		gui.repaint();
+		
+		targets = new Point3D[numOfRobots];
 
 		System.out.println(game.getFruits());
 
@@ -98,6 +101,7 @@ public class AutoGame_Thread extends Thread {
 					if(dest == -1) {
 						double minDist = Double.MAX_VALUE;
 						ArrayList<node_data> robot_mission = null;
+						Point3D pTarget = null;
 						List<String> list = game.getFruits();
 						Iterator<String> itr = list.iterator();
 						while(itr.hasNext()) {
@@ -105,23 +109,27 @@ public class AutoGame_Thread extends Thread {
 							JSONObject t = new JSONObject(info);
 							JSONObject fruit = t.getJSONObject("Fruit");
 							Point3D p = gui.setScale(new Point3D(fruit.getString("pos")));
-							edge_data e = gui.getEdgeOfFruit(p);
-							double dis = gui.getMissionDist(src, e);
-							System.out.println(dis);
-							if(dis<minDist) {
-								minDist = dis;
-								robot_mission = (ArrayList<node_data>) gui.getMissionList(src, e);
-							}	
+							if(!isTargeted(p)) {
+								edge_data e = gui.getEdgeOfFruit(p);
+								double dis = gui.getMissionDist(src, e);
+								if(dis<minDist) {
+									minDist = dis;
+									pTarget = p;
+									robot_mission = (ArrayList<node_data>) gui.getMissionList(src, e);
+								}	
+							}
+							if(robot_mission!=null) {
+								missionControl.put(rid, robot_mission);
+								targets[rid % numOfRobots] = pTarget;
+							}
 						}
-						missionControl.put(rid, robot_mission);
 					}
 
-					if(dest != -1) {
-						game.chooseNextEdge(rid, dest);
-						System.out.println("Turn to node: "+dest+"  time to end:"+(current_time/1000));
-						System.out.println(ttt);
-					}
-
+						if(dest != -1) {
+							game.chooseNextEdge(rid, dest);
+							System.out.println("Turn to node: "+dest+"  time to end:"+(current_time/1000));
+							System.out.println(ttt);
+						}
 				} catch (Exception e) {e.printStackTrace();}
 			}
 		}
@@ -157,6 +165,14 @@ public class AutoGame_Thread extends Thread {
 			if(count<numOfRobots)
 				game.addRobot(count++);
 		} catch (Exception e) {e.printStackTrace();}
+	}
+	
+	private boolean isTargeted(Point3D p) {
+		for(int i =0; i<targets.length; i++) {
+			if(targets[i]!=null && targets[i].equals(p))
+				return true;
+		}
+		return false;
 	}
 }
 

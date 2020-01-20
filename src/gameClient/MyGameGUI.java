@@ -601,7 +601,6 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 				Point3D p2 = setScale(new Point3D(fruit.getString("pos")));
 				double dest = p.distance2D(p2);
 				if(dest<20) {
-					System.out.println("fruit clicked!");
 					fruit_type = t;
 					return p2;
 				}
