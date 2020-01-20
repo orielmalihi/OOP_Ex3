@@ -1,3 +1,5 @@
+![12329159](https://user-images.githubusercontent.com/57680696/72753720-42640200-3bf8-11ea-9abd-fcc32b8fbd90.jpg)
+
 ## About This Project 
 This project represents a game that can be shown with GUI.
 The game includes a map and on the map there are a few robots and fruits.
