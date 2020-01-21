@@ -1,6 +1,8 @@
 package gameClient;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
@@ -26,13 +28,15 @@ import utils.Point3D;
 public class AutoGame_Thread extends Thread {
 	private MyGameGUI gui;
 	private int numOfRobots = 0;
+	private final int const_dt = 100;
+	private int min_dt;
 	private long time_of_last_draw = 0, current_time = 0;
 	private game_service game;
 	private ArrayList<String> fruits;
 	private ArrayList<String> robots;
-	private Point3D [] targets;
+	private HashMap<Integer, Point3D> targets;
 	private Hashtable<Integer, ArrayList<node_data>> missionControl = new Hashtable<Integer, ArrayList<node_data>>();
-	
+
 	/**
 	 * this is constructor for the thread.
 	 * it must get this parameters so it will be possible to show this
@@ -48,7 +52,7 @@ public class AutoGame_Thread extends Thread {
 		this.robots = robots;
 		this.gui = gui;
 	}
-	
+
 	/**
 	 * this funtion runs the game.
 	 */
@@ -62,8 +66,8 @@ public class AutoGame_Thread extends Thread {
 			numOfRobots = ttt.getInt("robots");
 		} catch (Exception e1) {e1.printStackTrace();}
 		gui.repaint();
-		
-		targets = new Point3D[numOfRobots];
+
+		targets = new HashMap<Integer, Point3D>(numOfRobots);
 
 		System.out.println(game.getFruits());
 
@@ -73,14 +77,21 @@ public class AutoGame_Thread extends Thread {
 		time_of_last_draw = game.timeToEnd();
 
 		while(game.isRunning()) {
-			moveRobots();
+				moveRobots();
+			try {
+				System.out.println("waiting "+min_dt);
+				if(min_dt>10000) min_dt = 10;
+				Thread.sleep(min_dt);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}			
 
 		String results = game.toString();
 		System.out.println("Game Over: "+results);
 
 	}
-	
+
 	/**
 	 * this function check if a destonation of a robot is -1, if it is
 	 * it means it does not move and it will give it a mission to the closest fruit to him.
@@ -88,11 +99,10 @@ public class AutoGame_Thread extends Thread {
 	 */
 
 	private void moveRobots() {
+		min_dt = Integer.MAX_VALUE;
 		List<String> log = game.move();
 		initList(robots, log);
 		initList(fruits, game.getFruits());
-		//		robots = (ArrayList<String>) log;
-		//		fruits = (ArrayList<String>) game.getFruits();
 		if(log!=null) {
 			current_time = game.timeToEnd();
 			if(time_of_last_draw-current_time>100) {
@@ -108,14 +118,22 @@ public class AutoGame_Thread extends Thread {
 					int rid = ttt.getInt("id");
 					int src = ttt.getInt("src");
 					int dest = ttt.getInt("dest");
+					int speed = ttt.getInt("speed");
+					System.out.println("src: "+src+",dest: "+dest);
 
 					if(dest == -1) {
 						ArrayList<node_data> robot_mission = missionControl.get(rid);
+						System.out.println("robot mission: "+robot_mission);
 						if(robot_mission!=null) {
 							while(!robot_mission.isEmpty()) {
 								node_data n = robot_mission.remove(0);
 								if(n.getKey()==src && robot_mission.size()>0) {
 									dest = robot_mission.get(0).getKey();
+									if(robot_mission.size()==1) {
+										timeToNextDest(n, robot_mission.get(0), speed, targets.get(rid));
+									}
+									else
+										timeToNextDest(n, robot_mission.get(0), speed, null);
 									break;
 								}
 							}
@@ -144,21 +162,27 @@ public class AutoGame_Thread extends Thread {
 							}
 							if(robot_mission!=null) {
 								missionControl.put(rid, robot_mission);
-								targets[rid % numOfRobots] = pTarget;
+								dest = robot_mission.get(1).getKey();
+								targets.put(rid, pTarget);
+								if(robot_mission.size()==2)
+									timeToNextDest(robot_mission.get(0), robot_mission.get(1), speed, targets.get(rid));
+								else
+									timeToNextDest(robot_mission.get(0), robot_mission.get(1), speed, null);
+								
 							}
 						}
 					}
 
-						if(dest != -1) {
-							game.chooseNextEdge(rid, dest);
-							System.out.println("Turn to node: "+dest+"  time to end:"+(current_time/1000));
-							System.out.println(ttt);
-						}
+					if(dest != -1) {
+						game.chooseNextEdge(rid, dest);
+						System.out.println("Turn to node: "+dest+"  time to end:"+(current_time/1000));
+						System.out.println(ttt);
+					}
 				} catch (Exception e) {e.printStackTrace();}
 			}
 		}
 	}
-	
+
 	/**
 	 * sets the target list to have all the values of the src list.
 	 * this is necessary and can not be done by only changing the pointer
@@ -176,7 +200,7 @@ public class AutoGame_Thread extends Thread {
 			target.add(s);
 		}
 	}
-	
+
 	/**
 	 * this function chooses a location for the robots.
 	 * the location will be as close as it can be to a fruit.
@@ -206,20 +230,39 @@ public class AutoGame_Thread extends Thread {
 				game.addRobot(count++);
 		} catch (Exception e) {e.printStackTrace();}
 	}
-	
+
 	/**
 	 * this function check is a fruit is currently targeted by another robot.
 	 * returns true if it is, and false if it is not.
 	 * @param p
 	 * @return
 	 */
-	
+
 	private boolean isTargeted(Point3D p) {
-		for(int i =0; i<targets.length; i++) {
-			if(targets[i]!=null && targets[i].equals(p))
+		Collection<Point3D> c = targets.values();
+		Iterator<Point3D> itr = c.iterator();
+		while(itr.hasNext()) {
+			Point3D p2 = itr.next();
+			if(p2.equals(p))
 				return true;
 		}
 		return false;
+	}
+
+	public void timeToNextDest(node_data src, node_data dest, int speed, Point3D fruit_loc) {
+		graph g = gui.getGraph();
+		edge_data e = g.getEdge(src.getKey(), dest.getKey());
+		double time = e.getWeight();
+		double ans = (time/speed)*1000;
+		if(fruit_loc!=null) {
+			double disToF = src.getLocation().distance2D(fruit_loc);
+			double disToDest = src.getLocation().distance2D(dest.getLocation());
+			double timeToFruit = disToF/disToDest;
+			ans *= timeToFruit;		
+		}
+		System.out.println("ans is "+ans);
+		if(ans<min_dt)
+			min_dt = (int) ans;
 	}
 }
 

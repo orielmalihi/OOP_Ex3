@@ -1,7 +1,9 @@
 package gameClient;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Iterator;
@@ -22,10 +24,11 @@ import utils.Point3D;
  *
  */
 public class KML_Logger {
-	
+
 	private Kml kml;
+	private String kml_String = "";
 	private Document doc;
-	
+
 	/**
 	 * crates the kml logger.
 	 * @param app_name
@@ -33,15 +36,14 @@ public class KML_Logger {
 	public KML_Logger(String app_name) {
 		kml = new Kml();
 		doc = kml.createAndSetDocument().withName(app_name).withOpen(true);
-		System.out.println("doc :"+doc);
 	}
-	
+
 	/**
 	 * adds a graph to the kml.
 	 * the nodes will be shown as blue-pushpin.
 	 * @param g
 	 */
-	
+
 	public void addGraph(graph g) {
 		Collection<node_data> c = g.getV();
 		Iterator<node_data> itr = c.iterator();
@@ -63,7 +65,7 @@ public class KML_Logger {
 			}
 		}
 	}
-	
+
 	/**
 	 * adds a robot to the kml.
 	 * the robot will be shown as white-pushpin.
@@ -71,7 +73,7 @@ public class KML_Logger {
 	 * user to see where the robot was in each moment of the game.
 	 * @param g
 	 */
-	
+
 	public void addRobot(Point3D p) {
 		LocalDateTime time = LocalDateTime.now();
 		Placemark robot = doc.createAndAddPlacemark();
@@ -79,9 +81,9 @@ public class KML_Logger {
 		robot.createAndAddStyle().createAndSetIconStyle().withScale(1.0).withIcon(icon);
 		robot.createAndSetPoint().addToCoordinates(p.x(), p.y());
 		robot.createAndSetTimeStamp().withWhen(time.toString());
-		
+
 	}
-	
+
 	/**
 	 * adds a fruit to the kml.
 	 * the fruit will be shown as yellow-pushpin if it is a banana or
@@ -90,7 +92,7 @@ public class KML_Logger {
 	 * user to see where the fruit was in each moment of the game.
 	 * @param g
 	 */
-	
+
 	public void addFruit(int type, Point3D p) {
 		LocalDateTime time = LocalDateTime.now();
 		Placemark fruit = doc.createAndAddPlacemark();
@@ -103,19 +105,38 @@ public class KML_Logger {
 		fruit.createAndSetPoint().addToCoordinates(p.x(), p.y());
 		fruit.createAndSetTimeStamp().withWhen(time.toString());	
 	}
-	
+
 	/**
-	 * crates the kml file with the param name.
+	 * crates the kml file with the param name and returns a String 
+	 * representing this kml file.
 	 * @param name
 	 */
-	
-	public void create_kml(String name) {
+
+	public String create_kml(String path) {
 		try {
-			kml.marshal(new File(name));
+			kml.marshal(new File(path));
+			initKml_String(path);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return kml_String;
 	}
+	
+	/**
+	 * inits a String that represnts this kml
+	 * @param path
+	 */
 
+	private void initKml_String(String path) {
+		File fileName = new File(path);
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(fileName)); 
+
+			String st; 
+			while ((st = br.readLine()) != null) {
+				kml_String += st;
+			}
+		} catch (Exception e) {e.printStackTrace();}
+	}
 }

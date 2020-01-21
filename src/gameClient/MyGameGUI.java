@@ -58,7 +58,7 @@ import utils.Range;
 
 public class MyGameGUI extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
 	private KML_Logger kml_logger;
-	private int scenario;
+	private int scenario, id = 311364954;
 	private final double EPSILON = 0.001;
 	private graph g;
 	private Graph_Algo algo;
@@ -317,7 +317,6 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			dbg.drawString("Current Score: "+ grade, 1150, 80);
 		}
 		if(customGameRunning && !game.isRunning() || !robots.isEmpty() && game!=null && !game.isRunning()) {
-//			kml_logger.create_kml("data/kml files/"+scenario+".kml");
 			dbg.setColor(Color.RED);
 			font = dbg.getFont().deriveFont((float) 30);
 			dbg.setFont(font);
@@ -332,6 +331,8 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			dbg.drawString("Final Score: "+ grade, width/2 - 100, height-500);
 			font = dbg.getFont().deriveFont((float) 16.5);
 			dbg.setFont(font);
+			String remark = kml_logger.create_kml("data/kml files/"+scenario+".kml");
+			game.sendKML(remark);
 		}
 		k.drawImage(bufferimage,0,0,this);
 		dbg.dispose();
@@ -349,8 +350,6 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			String path = chooser.getDirectory();
 			System.out.println(filename);
 			if(filename!=null) {
-				System.out.println(path);
-				System.out.println(filename);
 				kml_logger.create_kml(path + filename + ".kml");
 			}
 		}
@@ -364,6 +363,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			DGraph dg = new DGraph();
 			dg.init(gr);
 			this.g = dg;
+			Game_Server.login(id);
 			kml_logger.addGraph(g);
 			fruits = (ArrayList<String>) game.getFruits();
 			String info = game.toString();
@@ -379,6 +379,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			clear();
 			scenario = Integer.parseInt(JOptionPane.showInputDialog("Enter scenario number between 0-23"));
 			kml_logger = new KML_Logger("Auto-scenario: "+scenario);
+			Game_Server.login(id);
 			game = Game_Server.getServer(scenario); // you have [0,23] games
 			String gr = game.getGraph();
 			DGraph dg = new DGraph();
