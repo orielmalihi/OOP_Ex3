@@ -109,7 +109,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		MenuItem item3 = new MenuItem("New Auto Game");
 		item3.addActionListener(this);
 		
-		MenuItem item4 = new MenuItem("Level Statistics");
+		MenuItem item4 = new MenuItem("Game Statistics");
 		item4.addActionListener(this);
 
 		menu.add(item1);
@@ -399,7 +399,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			AutoGame_Thread auto = new AutoGame_Thread(game, fruits, robots, this);
 			auto.start();
 		}
-		else if(str.equals("Level Statistics")) {
+		else if(str.equals("Game Statistics")) {
 			clear();
 			repaint();
 			paintStatistics(this.getGraphics());
