@@ -277,7 +277,6 @@ public class AutoGame_Thread extends Thread {
 			double timeToFruit = disToF/disToDest;
 			ans *= timeToFruit;		
 		}
-		System.out.println("ans is "+ans);
 		if(ans<min_dt)
 			min_dt = (int) ans;
 	}

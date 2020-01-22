@@ -15,6 +15,11 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.AttributedCharacterIterator;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -103,10 +108,14 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 
 		MenuItem item3 = new MenuItem("New Auto Game");
 		item3.addActionListener(this);
+		
+		MenuItem item4 = new MenuItem("Level Statistics");
+		item4.addActionListener(this);
 
 		menu.add(item1);
 		menu.add(item2);
 		menu.add(item3);
+		menu.add(item4);
 
 
 		this.addMouseListener(this);
@@ -390,7 +399,12 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 			AutoGame_Thread auto = new AutoGame_Thread(game, fruits, robots, this);
 			auto.start();
 		}
-
+		else if(str.equals("Level Statistics")) {
+			clear();
+			repaint();
+			paintStatistics(this.getGraphics());
+			
+		}
 	}
 
 	@Override
@@ -512,6 +526,7 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 
 
 	private void clear() {
+		g = new DGraph();
 		game = null;
 		rx = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
 		ry = new Range(Integer.MAX_VALUE,Integer.MIN_VALUE);
@@ -695,5 +710,21 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	
 	public int getWidth() {
 		return width;
+	}
+	
+	public void paintStatistics(Graphics k) {
+		ArrayList<String> st = (ArrayList<String>) SimpleDB.getStatistics();
+		k.setColor(Color.RED);
+		Font font = k.getFont().deriveFont((float) 30);
+		k.setFont(font);
+		k.drawString("Statistics", 100, 100);
+		k.setColor(Color.BLUE);
+		font = k.getFont().deriveFont((float) 16.5);
+		k.setFont(font);
+		int i = 140;
+		while(!st.isEmpty()) {
+			k.drawString(st.remove(0), 100, i);
+			i += 20;
+		}
 	}
 }
