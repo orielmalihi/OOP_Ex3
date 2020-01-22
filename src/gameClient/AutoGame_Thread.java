@@ -29,6 +29,7 @@ public class AutoGame_Thread extends Thread {
 	private MyGameGUI gui;
 	private int numOfRobots = 0;
 	private final int const_dt = 100;
+	private boolean border_spliting = true;
 	private int min_dt;
 	private long time_of_last_draw = 0, current_time = 0;
 	private game_service game;
@@ -66,7 +67,14 @@ public class AutoGame_Thread extends Thread {
 			numOfRobots = ttt.getInt("robots");
 		} catch (Exception e1) {e1.printStackTrace();}
 		gui.repaint();
-
+		
+		try {
+		int check = Integer.parseInt(JOptionPane.showInputDialog("Enter 1 for a border spliting or 0 for a free run"));
+		if(check == 1)
+			border_spliting = true;
+		else
+			border_spliting = false;
+		} catch (Exception e) { border_spliting = false;}
 		targets = new HashMap<Integer, Point3D>(numOfRobots);
 
 		System.out.println(game.getFruits());
@@ -100,6 +108,8 @@ public class AutoGame_Thread extends Thread {
 
 	private void moveRobots() {
 		min_dt = Integer.MAX_VALUE;
+		double partOfWidth = gui.getWidth()/numOfRobots;
+		double border = partOfWidth;
 		List<String> log = game.move();
 		initList(robots, log);
 		initList(fruits, game.getFruits());
@@ -110,6 +120,7 @@ public class AutoGame_Thread extends Thread {
 				time_of_last_draw = game.timeToEnd();
 			}
 			for(int i=0;i<log.size();i++) {
+				int offset = 0;
 				String robot_json = log.get(i);
 
 				try {
@@ -123,7 +134,6 @@ public class AutoGame_Thread extends Thread {
 
 					if(dest == -1) {
 						ArrayList<node_data> robot_mission = missionControl.get(rid);
-						System.out.println("robot mission: "+robot_mission);
 						if(robot_mission!=null) {
 							while(!robot_mission.isEmpty()) {
 								node_data n = robot_mission.remove(0);
@@ -142,6 +152,7 @@ public class AutoGame_Thread extends Thread {
 
 					if(dest == -1) {
 						double minDist = Double.MAX_VALUE;
+						double MaxVal = 0;
 						ArrayList<node_data> robot_mission = null;
 						Point3D pTarget = null;
 						List<String> list = game.getFruits();
@@ -150,11 +161,15 @@ public class AutoGame_Thread extends Thread {
 							String info = itr.next();
 							JSONObject t = new JSONObject(info);
 							JSONObject fruit = t.getJSONObject("Fruit");
+							double val = fruit.getDouble("value");
 							Point3D p = gui.setScale(new Point3D(fruit.getString("pos")));
-							if(!isTargeted(p)) {
+							if(!isTargeted(p) && borderCheck(p.ix(), border-partOfWidth+offset, border)) {
 								edge_data e = gui.getEdgeOfFruit(p);
 								double dis = gui.getMissionDist(src, e);
+								double finalVal = val/dis;
 								if(dis<minDist) {
+//								if(finalVal>MaxVal) {
+//									MaxVal = finalVal;
 									minDist = dis;
 									pTarget = p;
 									robot_mission = (ArrayList<node_data>) gui.getMissionList(src, e);
@@ -179,6 +194,8 @@ public class AutoGame_Thread extends Thread {
 						System.out.println(ttt);
 					}
 				} catch (Exception e) {e.printStackTrace();}
+				border += partOfWidth;
+//				offset += 850;
 			}
 		}
 	}
@@ -263,6 +280,12 @@ public class AutoGame_Thread extends Thread {
 		System.out.println("ans is "+ans);
 		if(ans<min_dt)
 			min_dt = (int) ans;
+	}
+	
+	private boolean borderCheck(int loc, double start, double finish) {
+		if(border_spliting)
+			return loc>start - 300 && loc<finish + 300;
+		return true;		
 	}
 }
 

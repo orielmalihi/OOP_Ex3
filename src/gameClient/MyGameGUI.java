@@ -692,4 +692,8 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		}
 		return ans;
 	}
+	
+	public int getWidth() {
+		return width;
+	}
 }
