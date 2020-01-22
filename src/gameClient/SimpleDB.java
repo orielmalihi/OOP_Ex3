@@ -161,6 +161,14 @@ public class SimpleDB {
 		}
 		return ans;
 	}
+	
+	/**
+	 * gets user score and a level id and returns the rank index of this score
+	 * out of all the scores made for this level.
+	 * @param level
+	 * @param user_score
+	 * @return
+	 */
 
 	private static String getRank(int level, int user_score) {
 		String ans = "Did not found Your Score.";

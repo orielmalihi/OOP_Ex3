@@ -120,7 +120,6 @@ public class AutoGame_Thread extends Thread {
 				time_of_last_draw = game.timeToEnd();
 			}
 			for(int i=0;i<log.size();i++) {
-				int offset = 0;
 				String robot_json = log.get(i);
 
 				try {
@@ -163,7 +162,7 @@ public class AutoGame_Thread extends Thread {
 							JSONObject fruit = t.getJSONObject("Fruit");
 							double val = fruit.getDouble("value");
 							Point3D p = gui.setScale(new Point3D(fruit.getString("pos")));
-							if(!isTargeted(p) && borderCheck(p.ix(), border-partOfWidth+offset, border)) {
+							if(!isTargeted(p) && borderCheck(p.ix(), border-partOfWidth, border)) {
 								edge_data e = gui.getEdgeOfFruit(p);
 								double dis = gui.getMissionDist(src, e);
 								double finalVal = val/dis;
@@ -195,7 +194,6 @@ public class AutoGame_Thread extends Thread {
 					}
 				} catch (Exception e) {e.printStackTrace();}
 				border += partOfWidth;
-//				offset += 850;
 			}
 		}
 	}

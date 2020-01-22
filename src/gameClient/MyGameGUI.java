@@ -711,7 +711,11 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 	public int getWidth() {
 		return width;
 	}
-	
+	/**
+	 * painting the statistics of the the game:
+	 * how many games werw played, ranks, jighest scores and more.
+	 * @param k
+	 */
 	public void paintStatistics(Graphics k) {
 		ArrayList<String> st = (ArrayList<String>) SimpleDB.getStatistics();
 		k.setColor(Color.RED);
