@@ -167,10 +167,10 @@ public class AutoGame_Thread extends Thread {
 								edge_data e = gui.getEdgeOfFruit(p);
 								double dis = gui.getMissionDist(src, e);
 								double finalVal = val/dis;
-								if(dis<minDist) {
-//								if(finalVal>MaxVal) {
-//									MaxVal = finalVal;
-									minDist = dis;
+//								if(dis<minDist) {
+								if(finalVal>MaxVal) {
+									MaxVal = finalVal;
+//									minDist = dis;
 									pTarget = p;
 									robot_mission = (ArrayList<node_data>) gui.getMissionList(src, e);
 								}	
