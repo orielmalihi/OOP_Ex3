@@ -91,7 +91,7 @@ public class AutoGame_Thread extends Thread {
 				System.out.println("waiting "+min_dt);
 				getMinOfTimeAndUpdate();
 				if(min_dt>10000) min_dt = 5;
-				Thread.sleep(min_dt);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -234,14 +234,29 @@ public class AutoGame_Thread extends Thread {
 	private void chooseLocationsForRobots() {
 		int count = 0;
 		List<String> list = game.getFruits();
+		ArrayList<JSONObject> fruits = new ArrayList<JSONObject>();
 		Iterator<String> itr = list.iterator();
 		try {
-			while(itr.hasNext() && count<numOfRobots) {
+			while(itr.hasNext()) {
 				String info = itr.next();
 				JSONObject t = new JSONObject(info);
 				JSONObject fruit = t.getJSONObject("Fruit");
-				int type = fruit.getInt("type");
-				Point3D p = gui.setScale(new Point3D(fruit.getString("pos")));
+				fruits.add(fruit);
+			}
+			while(count<numOfRobots) {
+				int maxVal = 0;
+				int index = 0;
+				for(int i =0; i<fruits.size(); i++) {
+					int t = fruits.get(i).getInt("value");
+					if(t>maxVal) {
+						maxVal = t;
+						index = i;		
+					}
+				}
+				JSONObject fruitC = fruits.remove(index);
+				count++;
+				int type = fruitC.getInt("type");
+				Point3D p = gui.setScale(new Point3D(fruitC.getString("pos")));
 				edge_data e = gui.getEdgeOfFruit(p);
 				System.out.println(e);
 				if(type == -1)
