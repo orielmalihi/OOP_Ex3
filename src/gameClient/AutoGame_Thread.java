@@ -88,7 +88,7 @@ public class AutoGame_Thread extends Thread {
 				moveRobots();
 			try {
 				System.out.println("waiting "+min_dt);
-				if(min_dt>10000) min_dt = 10;
+				if(min_dt>10000) min_dt = 24;
 				Thread.sleep(min_dt);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -109,7 +109,7 @@ public class AutoGame_Thread extends Thread {
 	private void moveRobots() {
 		min_dt = Integer.MAX_VALUE;
 		double partOfWidth = gui.getWidth()/numOfRobots;
-		double border = partOfWidth;
+		double border = 0;
 		List<String> log = game.move();
 		initList(robots, log);
 		initList(fruits, game.getFruits());
@@ -162,7 +162,7 @@ public class AutoGame_Thread extends Thread {
 							JSONObject fruit = t.getJSONObject("Fruit");
 							double val = fruit.getDouble("value");
 							Point3D p = gui.setScale(new Point3D(fruit.getString("pos")));
-							if(!isTargeted(p) && borderCheck(p.ix(), border-partOfWidth, border)) {
+							if(!isTargeted(p) && borderCheck(p.ix(), border, border+partOfWidth)) {
 								edge_data e = gui.getEdgeOfFruit(p);
 								double dis = gui.getMissionDist(src, e);
 								double finalVal = val/dis;
@@ -281,7 +281,7 @@ public class AutoGame_Thread extends Thread {
 	
 	private boolean borderCheck(int loc, double start, double finish) {
 		if(border_spliting)
-			return loc>start - 300 && loc<finish + 300;
+			return loc>start -300  && loc<finish + 300;
 		return true;		
 	}
 }
