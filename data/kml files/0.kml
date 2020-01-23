@@ -302,7 +302,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.036359</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.323544</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -317,12 +317,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.197652421384994,32.101917822633716</ns2:coordinates>
+                <ns2:coordinates>35.19768213062889,32.10192440588071</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.055326400</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.341497800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -342,7 +342,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.165015200</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.451202400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -357,12 +357,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19830602475064,32.102062654067524</ns2:coordinates>
+                <ns2:coordinates>35.198340685535186,32.102070334522345</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.167009600</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.453199</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -382,7 +382,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.280721300</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.563902200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -397,12 +397,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19887545192526,32.10218883296818</ns2:coordinates>
+                <ns2:coordinates>35.198900209628505,32.10219431900734</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.282699600</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.566893</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -422,7 +422,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.390412600</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.675604600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -437,12 +437,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19941516985599,32.10230842862185</ns2:coordinates>
+                <ns2:coordinates>35.19945478218118,32.1023172062845</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.392406400</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.678594100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -462,7 +462,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.499122200</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.786308100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -477,12 +477,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19995983932736,32.102429121483354</ns2:coordinates>
+                <ns2:coordinates>35.200004403193205,32.10243899635384</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.501116300</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.788303100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -502,7 +502,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.708562</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.896014</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -517,12 +517,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.20099471132298,32.102658437920205</ns2:coordinates>
+                <ns2:coordinates>35.20054907266458,32.10255968921534</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.710556400</ns2:when>
+                <ns2:when>2020-01-23T15:06:32.898009500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -542,7 +542,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.817272400</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.006718900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -557,12 +557,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.2015344292537,32.10277803357388</ns2:coordinates>
+                <ns2:coordinates>35.20109374213595,32.10268038207685</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.819266900</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.008711</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -582,7 +582,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.924982</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.116424600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -597,12 +597,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.202074147184426,32.10289762922755</ns2:coordinates>
+                <ns2:coordinates>35.20164336314797,32.10280217214618</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:57.926976300</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.118427300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -622,7 +622,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:58.032695700</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.223139700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -637,12 +637,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.202603962033855,32.103015030465556</ns2:coordinates>
+                <ns2:coordinates>35.2021731779974,32.102919573384185</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:58.034689800</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.225134800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -662,7 +662,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:58.141403600</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.331861</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -677,12 +677,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.20313872842393,32.10313352891139</ns2:coordinates>
+                <ns2:coordinates>35.20270794438748,32.10303807183002</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:58.142400900</ns2:when>
+                <ns2:when>2020-01-23T15:06:33.333844900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -702,87 +702,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:58.248118100</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.20319591121872,32.1031462</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:58.250113800</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:59.903693300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.207459915571356,32.102546850265966</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:51:59.906684600</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:00.013398800</ns2:when>
+                <ns2:when>2020-01-23T15:06:35.080179200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -802,7 +722,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:00.015393700</ns2:when>
+                <ns2:when>2020-01-23T15:06:35.082183900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -822,7 +742,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:01.037660900</ns2:when>
+                <ns2:when>2020-01-23T15:06:36.103437900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -842,7 +762,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:01.039656400</ns2:when>
+                <ns2:when>2020-01-23T15:06:36.104435300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -862,47 +782,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:01.145374300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.20792948668281,32.10470908739496</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:01.147366500</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:02.818897800</ns2:when>
+                <ns2:when>2020-01-23T15:06:37.782947400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -922,7 +802,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:02.820893500</ns2:when>
+                <ns2:when>2020-01-23T15:06:37.783971</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -942,87 +822,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:02.926635</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.20582803389831,32.10625380168067</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:02.928604400</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:04.395681500</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.201689506227424,32.10601759107163</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:04.396678800</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:04.511372300</ns2:when>
+                <ns2:when>2020-01-23T15:06:39.255012200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1042,7 +842,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:04.513366900</ns2:when>
+                <ns2:when>2020-01-23T15:06:39.256009800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1062,7 +862,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.138697300</ns2:when>
+                <ns2:when>2020-01-23T15:06:39.878345700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1082,7 +882,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.140690700</ns2:when>
+                <ns2:when>2020-01-23T15:06:39.880341500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1102,7 +902,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.243414800</ns2:when>
+                <ns2:when>2020-01-23T15:06:39.995033300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1117,12 +917,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.199669994235904,32.10567363735025</ns2:coordinates>
+                <ns2:coordinates>35.19966720196138,32.10567316167403</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.246409800</ns2:when>
+                <ns2:when>2020-01-23T15:06:39.997027400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1142,7 +942,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.351129500</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.107747100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1157,12 +957,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19937122086184,32.10562273999424</ns2:coordinates>
+                <ns2:coordinates>35.199323752194935,32.10561465349842</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.354119500</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.109729400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1182,7 +982,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.459838900</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.214447600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1197,12 +997,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19906965521326,32.105571366961996</ns2:coordinates>
+                <ns2:coordinates>35.19902497882088,32.10556375614241</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.461834200</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.215444200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1222,7 +1022,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.566550600</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.320170200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1237,12 +1037,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19876808956467,32.10551999392976</ns2:coordinates>
+                <ns2:coordinates>35.19872899772134,32.105513334462614</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.567561500</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.321162100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1262,7 +1062,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.677255100</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.427876900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1277,12 +1077,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19847490073966,32.1054700479262</ns2:coordinates>
+                <ns2:coordinates>35.198430224347284,32.1054624371066</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.678252600</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.429871400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1302,7 +1102,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.782973600</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.535588500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1317,12 +1117,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.198164958267505,32.10541724786528</ns2:coordinates>
+                <ns2:coordinates>35.1981286586987,32.10541106407437</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.784969300</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.536586300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1342,7 +1142,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.890724400</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.647288700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1357,12 +1157,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19786897716797,32.105366826185495</ns2:coordinates>
+                <ns2:coordinates>35.197821508501065,32.10535873968968</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.892679</ns2:when>
+                <ns2:when>2020-01-23T15:06:40.649284200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1382,87 +1182,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.996432500</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19756741151939,32.10531545315326</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:05.998397300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.195224052340706,32.10575624080796</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.102120300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.104114100</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.195224052340706,32.10575624080796</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.723467900</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.366367700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1482,7 +1202,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.724455900</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.368363100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1502,7 +1222,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.828179400</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.476075700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1517,12 +1237,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19483180362105,32.10583240612889</ns2:coordinates>
+                <ns2:coordinates>35.194816801934714,32.10583531909762</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.830173400</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.477078700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1542,7 +1262,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.939880800</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.584784400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1557,12 +1277,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.194438009354826,32.10590887155801</ns2:coordinates>
+                <ns2:coordinates>35.19440800598216,32.105914697495464</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:06.941875900</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.585781700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1582,7 +1302,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:07.044601700</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.697480900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1597,12 +1317,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.1940217125591,32.10598970644021</ns2:coordinates>
+                <ns2:coordinates>35.19399545960802,32.10599480413549</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:07.045605500</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.699477100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1622,7 +1342,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:07.152312</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.807189800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1637,12 +1357,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19362791829287,32.10606617186933</ns2:coordinates>
+                <ns2:coordinates>35.19357916281229,32.106075639017696</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:07.154307</ns2:when>
+                <ns2:when>2020-01-23T15:06:41.809184</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1662,47 +1382,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:07.258029900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19341035835351,32.10610841680672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:07.259027100</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19038634163924,32.10748920705224</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:08.621425900</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.212442600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1722,7 +1402,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:08.622438100</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.213429900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1742,7 +1422,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:08.726128500</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.322137700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1757,12 +1437,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.190152088198985,32.10759616904876</ns2:coordinates>
+                <ns2:coordinates>35.1901431797365,32.10760023672407</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:08.727104100</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.323135300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1782,7 +1462,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:08.931554800</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.434837500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1797,12 +1477,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18969552949654,32.10780463740804</ns2:coordinates>
+                <ns2:coordinates>35.18989819701812,32.107712097794895</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:08.932551500</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.435836</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1822,7 +1502,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:09.040265700</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.545540200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1837,12 +1517,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
+                <ns2:coordinates>35.18965321429973,32.10782395886572</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:09.041262900</ns2:when>
+                <ns2:when>2020-01-23T15:06:43.547535100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1862,7 +1542,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:10.812525900</ns2:when>
+                <ns2:when>2020-01-23T15:06:45.336754300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1877,12 +1557,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.19341035835351,32.10610841680672</ns2:coordinates>
+                <ns2:coordinates>35.19340886369571,32.106109099279436</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:10.814520300</ns2:when>
+                <ns2:when>2020-01-23T15:06:45.338747700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1902,47 +1582,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:11.962451</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19752639501989,32.105309180919</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:11.963448500</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:12.066174300</ns2:when>
+                <ns2:when>2020-01-23T15:06:46.490668500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1962,7 +1602,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:12.068168200</ns2:when>
+                <ns2:when>2020-01-23T15:06:46.492663900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -1982,7 +1622,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:13.500340500</ns2:when>
+                <ns2:when>2020-01-23T15:06:47.927825800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2002,7 +1642,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:13.501337600</ns2:when>
+                <ns2:when>2020-01-23T15:06:47.929818900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2022,7 +1662,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:13.605163700</ns2:when>
+                <ns2:when>2020-01-23T15:06:48.806474700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2037,52 +1677,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.2016888087167,32.10601755126051</ns2:coordinates>
+                <ns2:coordinates>35.199270698978985,32.105605615650155</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:13.607056200</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:14.474734700</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19927349125351,32.10560609132638</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:14.476728700</ns2:when>
+                <ns2:when>2020-01-23T15:06:48.807472300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2102,7 +1702,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:14.581477200</ns2:when>
+                <ns2:when>2020-01-23T15:06:49.365979600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2117,12 +1717,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
+                <ns2:coordinates>35.19341039384105,32.10610840991589</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:14.582475400</ns2:when>
+                <ns2:when>2020-01-23T15:06:49.368002700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2142,47 +1742,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:15.135996800</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19341035835351,32.10610841680672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:15.137992600</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18893516072167,32.10655929420479</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.000654600</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.232663700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2202,7 +1762,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.001652500</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.234657600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2222,7 +1782,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.304875800</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.540837900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2237,12 +1797,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.1889331729899,32.10655536432869</ns2:coordinates>
+                <ns2:coordinates>35.18893535359494,32.10655967552791</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.306836200</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.542833200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2262,7 +1822,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.410593700</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.651541900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2277,12 +1837,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18870420945999,32.106102688410516</ns2:coordinates>
+                <ns2:coordinates>35.18869112582971,32.1060768212152</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.411558400</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.653537400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2302,7 +1862,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.514283500</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.761251700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2317,12 +1877,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.188475245930086,32.10565001249235</ns2:coordinates>
+                <ns2:coordinates>35.18844471745943,32.105589655703255</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.516289800</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.763246600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2342,7 +1902,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.620031800</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.870956600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2357,12 +1917,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18824628240018,32.10519733657417</ns2:coordinates>
+                <ns2:coordinates>35.18820703150934,32.1051197349882</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.621994500</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.871954700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2382,7 +1942,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.726714600</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.981659800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2397,12 +1957,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18801731887027,32.104744660656</ns2:coordinates>
+                <ns2:coordinates>35.187969345559246,32.104649814273145</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.728708700</ns2:when>
+                <ns2:when>2020-01-23T15:06:50.983654</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2422,7 +1982,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.832431700</ns2:when>
+                <ns2:when>2020-01-23T15:06:51.091366200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2437,12 +1997,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18778399413028,32.10428336233939</ns2:coordinates>
+                <ns2:coordinates>35.18772947900411,32.10417558235887</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.833429200</ns2:when>
+                <ns2:when>2020-01-23T15:06:51.093360700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2462,47 +2022,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.939145900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18755503060037,32.10383068642121</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:16.940143400</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.20539663533063,32.10283686555705</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:17.776934800</ns2:when>
+                <ns2:when>2020-01-23T15:06:51.916163100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2522,7 +2042,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:17.777904900</ns2:when>
+                <ns2:when>2020-01-23T15:06:51.918156800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2542,7 +2062,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:17.881662600</ns2:when>
+                <ns2:when>2020-01-23T15:06:52.469684400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2557,12 +2077,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18910131880549,32.103618700840336</ns2:coordinates>
+                <ns2:coordinates>35.19597423610007,32.10154834138494</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:17.882622900</ns2:when>
+                <ns2:when>2020-01-23T15:06:52.471677600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2582,47 +2102,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:18.430159400</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19597880064568,32.10154696638656</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:18.431156300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.20539663533063,32.10283686555705</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.161208</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.209703500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2642,7 +2122,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.163201400</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.210725400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2662,7 +2142,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.692821400</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.645537700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2682,7 +2162,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.694817700</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.647531800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2702,7 +2182,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.797504700</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.754249500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2717,12 +2197,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.20595039578229,32.102759028821445</ns2:coordinates>
+                <ns2:coordinates>35.20597114519519,32.102756112277724</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.798501400</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.755245500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2742,7 +2222,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.904219900</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.860963100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2757,12 +2237,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.206495067871124,32.102682469548846</ns2:coordinates>
+                <ns2:coordinates>35.206526191990484,32.10267809473327</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:19.905217400</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.861961300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2782,7 +2262,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:20.108674700</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.970667200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2797,12 +2277,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.20746249717514,32.10254648739496</ns2:coordinates>
+                <ns2:coordinates>35.20708123878578,32.10260007718882</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:20.110667700</ns2:when>
+                <ns2:when>2020-01-23T15:06:53.971665</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2822,7 +2302,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:20.623296100</ns2:when>
+                <ns2:when>2020-01-23T15:06:54.556102</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2842,7 +2322,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:20.624293800</ns2:when>
+                <ns2:when>2020-01-23T15:06:54.558097800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2862,7 +2342,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:21.460060100</ns2:when>
+                <ns2:when>2020-01-23T15:06:55.394861900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2877,12 +2357,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.20582803389831,32.10625380168067</ns2:coordinates>
+                <ns2:coordinates>35.205830197932414,32.10625221096475</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:21.462053700</ns2:when>
+                <ns2:when>2020-01-23T15:06:55.395859700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2902,7 +2382,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.195094900</ns2:when>
+                <ns2:when>2020-01-23T15:06:56.133887600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2922,7 +2402,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.197088100</ns2:when>
+                <ns2:when>2020-01-23T15:06:56.135881100</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2942,7 +2422,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.649877500</ns2:when>
+                <ns2:when>2020-01-23T15:06:56.493922600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2962,7 +2442,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.651872400</ns2:when>
+                <ns2:when>2020-01-23T15:06:56.495916300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -2982,47 +2462,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.755596500</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.756594300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.982988700</ns2:when>
+                <ns2:when>2020-01-23T15:06:56.725336700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3042,7 +2482,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:22.983986400</ns2:when>
+                <ns2:when>2020-01-23T15:06:56.726329</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3062,487 +2502,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.329100200</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.331058500</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.710044600</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18753431485243,32.103789730028616</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.712062700</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.814797700</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18753053591606,32.10378225882353</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.815785900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.949435300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188500897480715,32.105700727290625</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:23.950430800</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.056118</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18926542477408,32.10721224790107</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.058112600</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.161837</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.162834700</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.519878</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19340020308667,32.10611305378288</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.521874900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.624598300</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19341035835351,32.10610841680672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.625595</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.856977100</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19751559177405,32.10531127865099</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.857974200</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.960702800</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:24.962694900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.065419900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19565314594775,32.10567292109103</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.066417800</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188827745913414,32.10634692808267</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.172134100</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.19368417461662,32.1060552482366</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.174128600</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.188827745913414,32.10634692808267</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.620937500</ns2:when>
+                <ns2:when>2020-01-23T15:06:57.071382600</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3562,14 +2522,14 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.621962100</ns2:when>
+                <ns2:when>2020-01-23T15:06:57.073374700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
                     <ns2:scale>1.0</ns2:scale>
                     <ns2:heading>0.0</ns2:heading>
                     <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</ns2:href>
                         <ns2:refreshInterval>0.0</ns2:refreshInterval>
                         <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
                         <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
@@ -3577,12 +2537,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.188827745913414,32.10634692808267</ns2:coordinates>
+                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.727649</ns2:when>
+                <ns2:when>2020-01-23T15:06:57.459340800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3597,12 +2557,212 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
+                <ns2:coordinates>35.18753431485243,32.103789730028616</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.728646800</ns2:when>
+                <ns2:when>2020-01-23T15:06:57.461336200</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:57.603954800</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.18849354625674,32.1056861934386</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:57.604951500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:57.710668500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.18928012722203,32.107241315605116</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:57.711666</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.106611</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19340020308667,32.10611305378288</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.108606400</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.344974200</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.345972400</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.455676800</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.195540633300254,32.105694768356486</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.457684200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3622,7 +2782,87 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.871267400</ns2:when>
+                <ns2:when>2020-01-23T15:06:58.565383400</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.193477901429546,32.106095301556614</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.567378600</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188827745913414,32.10634692808267</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.919440200</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.18959085506232,32.10785243259284</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:58.921433900</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188827745913414,32.10634692808267</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:06:59.068041700</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3642,7 +2882,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:25.873262400</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.069038300</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3662,7 +2902,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.075722600</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.175753</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3677,12 +2917,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18770876325617,32.104134625966275</ns2:coordinates>
+                <ns2:coordinates>35.18825936603046,32.1052232037695</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.077714600</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.177746500</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3702,7 +2942,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.179444900</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.286455800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3717,12 +2957,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18753053591606,32.10378225882353</ns2:coordinates>
+                <ns2:coordinates>35.187654248129995,32.10402684598576</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.181437400</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.287452900</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3742,7 +2982,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.476666500</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.604608400</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3762,7 +3002,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.478650500</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.606628200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3782,7 +3022,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.582364200</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.713354200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3797,52 +3037,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18910131880549,32.103618700840336</ns2:coordinates>
+                <ns2:coordinates>35.188426861481574,32.10368892880143</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:52:26.583361400</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18867176864414,32.103663427809636</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:53:41.030321900</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:Style>
-                <ns2:IconStyle>
-                    <ns2:scale>1.0</ns2:scale>
-                    <ns2:heading>0.0</ns2:heading>
-                    <ns2:Icon>
-                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
-                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
-                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
-                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
-                    </ns2:Icon>
-                </ns2:IconStyle>
-            </ns2:Style>
-            <ns2:Point>
-                <ns2:coordinates>35.18866726211188,32.103663897052925</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:53:41.033313500</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.715349800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3862,7 +3062,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:53:44.806226400</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.825016200</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3877,12 +3077,12 @@
                 </ns2:IconStyle>
             </ns2:Style>
             <ns2:Point>
-                <ns2:coordinates>35.18866726211188,32.103663897052925</ns2:coordinates>
+                <ns2:coordinates>35.187698981795364,32.10376471937331</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-21T23:53:44.807251800</ns2:when>
+                <ns2:when>2020-01-23T15:06:59.827009800</ns2:when>
             </ns2:TimeStamp>
             <ns2:Style>
                 <ns2:IconStyle>
@@ -3898,6 +3098,326 @@
             </ns2:Style>
             <ns2:Point>
                 <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.132196</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.133192400</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.487248700</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19340020308667,32.10611305378288</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.489242300</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.725609500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19751559177405,32.10531127865099</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.727602500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.836312500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.195671898055664,32.10566927988012</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.837309900</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188081181912885,32.104870922080536</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.942032400</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.19362791829287,32.10606617186933</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:00.943028300</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188081181912885,32.104870922080536</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:01.299078600</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:01.300074500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188081181912885,32.104870922080536</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:01.581320500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.188084917626725,32.10487830783185</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:01.582317300</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.20103595448387,32.10266757695841</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:04.311154500</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.18753053591606,32.10378225882353</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-23T15:07:04.314146200</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Style>
+                <ns2:IconStyle>
+                    <ns2:scale>1.0</ns2:scale>
+                    <ns2:heading>0.0</ns2:heading>
+                    <ns2:Icon>
+                        <ns2:href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</ns2:href>
+                        <ns2:refreshInterval>0.0</ns2:refreshInterval>
+                        <ns2:viewRefreshTime>0.0</ns2:viewRefreshTime>
+                        <ns2:viewBoundScale>0.0</ns2:viewBoundScale>
+                    </ns2:Icon>
+                </ns2:IconStyle>
+            </ns2:Style>
+            <ns2:Point>
+                <ns2:coordinates>35.20103595448387,32.10266757695841</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
     </ns2:Document>

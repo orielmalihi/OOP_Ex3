@@ -67,7 +67,9 @@ public class SimpleDB {
 				int score = resultSet.getInt("score");
 				int level_id = resultSet.getInt("levelID");
 				int moves = resultSet.getInt("moves");
-				for(int i =0 ; i<log[0].length; i++) {
+				if(level_id==-31)
+					continue;
+				for(int i =0 ; i<log[0].length ; i++) {
 					if(log[0][i]==level_id)
 						level_id = i;
 				}

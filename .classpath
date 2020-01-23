@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="lib/jaxb-impl-2.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/oriel/eclipse-workspace/OOP_Ex3/lib/mysql-connector-java-5.1.47.jar"/>
 	<classpathentry kind="lib" path="C:/Users/oriel/eclipse-workspace/OOP_Ex3/lib/GameServer_v0.33.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

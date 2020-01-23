@@ -30,11 +30,12 @@ public class AutoGame_Thread extends Thread {
 	private int numOfRobots = 0;
 	private final int const_dt = 100;
 	private boolean border_spliting = true;
-	private int min_dt;
+	private int min_dt = Integer.MAX_VALUE;
 	private long time_of_last_draw = 0, current_time = 0;
 	private game_service game;
 	private ArrayList<String> fruits;
 	private ArrayList<String> robots;
+	private ArrayList<Integer> timeLeft = new ArrayList<Integer>();
 	private HashMap<Integer, Point3D> targets;
 	private Hashtable<Integer, ArrayList<node_data>> missionControl = new Hashtable<Integer, ArrayList<node_data>>();
 
@@ -88,7 +89,8 @@ public class AutoGame_Thread extends Thread {
 				moveRobots();
 			try {
 				System.out.println("waiting "+min_dt);
-				if(min_dt>10000) min_dt = 24;
+				getMinOfTimeAndUpdate();
+				if(min_dt>10000) min_dt = 5;
 				Thread.sleep(min_dt);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -140,9 +142,12 @@ public class AutoGame_Thread extends Thread {
 									dest = robot_mission.get(0).getKey();
 									if(robot_mission.size()==1) {
 										timeToNextDest(n, robot_mission.get(0), speed, targets.get(rid));
+										timeLeft.add(min_dt);
 									}
-									else
+									else {
 										timeToNextDest(n, robot_mission.get(0), speed, null);
+										timeLeft.add(min_dt);
+									}
 									break;
 								}
 							}
@@ -178,10 +183,13 @@ public class AutoGame_Thread extends Thread {
 								missionControl.put(rid, robot_mission);
 								dest = robot_mission.get(1).getKey();
 								targets.put(rid, pTarget);
-								if(robot_mission.size()==2)
+								if(robot_mission.size()==2) {
 									timeToNextDest(robot_mission.get(0), robot_mission.get(1), speed, targets.get(rid));
-								else
+									timeLeft.add(min_dt);
+								}else {
 									timeToNextDest(robot_mission.get(0), robot_mission.get(1), speed, null);
+									timeLeft.add(min_dt);
+								}
 								
 							}
 						}
@@ -263,6 +271,14 @@ public class AutoGame_Thread extends Thread {
 		}
 		return false;
 	}
+	
+	/**
+	 * returns the time to get from the src node to the dest node.
+	 * @param src
+	 * @param dest
+	 * @param speed
+	 * @param fruit_loc
+	 */
 
 	public void timeToNextDest(node_data src, node_data dest, int speed, Point3D fruit_loc) {
 		graph g = gui.getGraph();
@@ -275,14 +291,47 @@ public class AutoGame_Thread extends Thread {
 			double timeToFruit = disToF/disToDest;
 			ans *= timeToFruit;		
 		}
-		if(ans<min_dt)
-			min_dt = (int) ans;
+		min_dt = (int) ans;
+//		if(ans<min_dt)
+//			min_dt = (int) ans;
 	}
+	
+	/**
+	 * return true if the fruit is in the border limits of the current robot.
+	 * @param loc
+	 * @param start
+	 * @param finish
+	 * @return
+	 */
 	
 	private boolean borderCheck(int loc, double start, double finish) {
 		if(border_spliting)
-			return loc>start -300  && loc<finish + 300;
+			return loc>start - 300   && loc<finish + 300;
 		return true;		
+	}
+	
+	/**
+	 * gets the minimum time to wait untill next callinf to moveRobots and updats the
+	 * time to wait of all the robots
+	 */
+	
+	private void getMinOfTimeAndUpdate() {
+		int min = Integer.MAX_VALUE;
+		ArrayList<Integer> temp = new ArrayList<Integer>();
+
+		for(int i=0; i<timeLeft.size(); i++) {
+			int t = timeLeft.get(i);
+			if(t<min)
+				min = t;
+		}
+		
+		for(int i=0; i<timeLeft.size(); i++) {
+			int n = timeLeft.get(i);
+			if(n-min>0)
+				temp.add(n-min);
+		}
+		timeLeft = temp;
+		min_dt = min;
 	}
 }
 
