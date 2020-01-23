@@ -721,11 +721,11 @@ public class MyGameGUI extends JFrame implements ActionListener, MouseListener, 
 		k.setColor(Color.RED);
 		Font font = k.getFont().deriveFont((float) 30);
 		k.setFont(font);
-		k.drawString("Statistics", 100, 100);
+		k.drawString("Statistics", 100, 80);
 		k.setColor(Color.BLUE);
 		font = k.getFont().deriveFont((float) 16.5);
 		k.setFont(font);
-		int i = 140;
+		int i = 110;
 		while(!st.isEmpty()) {
 			k.drawString(st.remove(0), 100, i);
 			i += 20;
