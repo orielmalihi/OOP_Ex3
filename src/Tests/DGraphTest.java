@@ -12,6 +12,7 @@ import dataStructure.Edge;
 import dataStructure.Vertex;
 import dataStructure.edge_data;
 import dataStructure.node_data;
+import utils.Point3D;
 
 class DGraphTest {
 	Vertex[] v = {
@@ -159,11 +160,13 @@ class DGraphTest {
 	@Test
 	void testMilyon() {
 		DGraph milyon = new DGraph();
-		for(int i =0; i<999995; i++) {
-			node_data n = new Vertex(i,i);
-			g.addNode(n);
+		
+		for(int i =0; i<1000000; i++) {
+			Point3D p = new Point3D(i,i,i);
+			node_data n = new Vertex(p,i);
+			milyon.addNode(n);
 		}
-		assertEquals(1000000, g.nodeSize());
+		assertEquals(1000000, milyon.nodeSize());
 	}
 
 }

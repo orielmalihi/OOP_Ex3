@@ -292,8 +292,6 @@ public class AutoGame_Thread extends Thread {
 			ans *= timeToFruit;		
 		}
 		min_dt = (int) ans;
-//		if(ans<min_dt)
-//			min_dt = (int) ans;
 	}
 	
 	/**
