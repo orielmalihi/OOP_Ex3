@@ -2,7 +2,7 @@
 
 ## About This Project 
 This project represents a game that can be shown with GUI.
-The game includes a map and on the map there are a few robots and fruits.
+The game includes a map and on the map there are few robots and fruits.
 The mission of the robots is to eat as much fruits as they can, and gain the highest score they can in a 30 or 60 seconds game.
 The rusults of the game are shown on the GUI and can be saved in a KML file to be displayed on apps like Google-Earth.
 
