@@ -12,7 +12,7 @@ The rusults of the game are shown on the GUI and can be saved in a KML file to b
 
 ## The Game
 
-There are to kinds of games , the Custom-Game and the Auto-Game.
+There are two kinds of games , the Custom-Game and the Auto-Game.
  
 
 > **The Custom-Game**
