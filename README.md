@@ -23,7 +23,7 @@ The user chooses a robot and a fruit target and than the robots goes to ear that
 
 > **The Auto-Game**
 
-In the Auto-Game the user can't control the robots, he can only see of well they are doing. when a robot does not have fruit to eat or it got to a fruit and ate it he will get a new mission to a new fruit.
+In the Auto-Game the user can't control the robots, he can only see how well they are doing. when a robot does not have fruit to eat or it got to a fruit and ate it he will get a new mission to a new fruit.
 
 ----------
 ## Graphics
